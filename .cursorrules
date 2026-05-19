@@ -1,0 +1,43 @@
+# SHealth_15 — Cursor Rules (초안)
+
+## 프로젝트 개요
+- **도메인**: 삼성 헬스 BMI 통계 (연령대별 저체중/정상/과체중/비만 비율)
+- **스택**: C++17, CMake 3.10+, Google Test (FetchContent), `shealth_lib` + `SHealthBMI` / `SHealthBMITest`
+- **데이터**: `shealth.dat` (id, age, weight, height). 체중 0 → 동일 연령대 평균 보정
+
+## BMI 비즈니스 규칙 (README 기준)
+- BMI = weight(kg) / (height(m))²
+- 분류: ≤18.5 저체중, 18.5 초과 ~ 23 미만 정상, 23 이상 ~ 25 미만 과체중, 25 이상 비만
+- 연령대: 20대(20–29), 30대, …, 70대 (10년 단위)
+- `getBmiRatio(ageClass, type)`: ageClass ∈ {20,30,40,50,60,70}, type ∈ {100,200,300,400} (저/정/과/비)
+
+## 디렉터리·산출물 규칙
+- **docs/** : 단계별 분석·계획·결함 문서 (다음 step 입력으로 사용)
+- **Report/** : 단계 완료 보고서 (`NN_제목_report.md`)
+- **Prompting/** : 단계 대화 Transcript (`NN_제목.md`, 보고서명에서 `_report` 제거)
+- **src/main/cpp/** : 프로덕션 코드 | **src/test/cpp/** : Google Test
+
+## 코딩·리팩토링 원칙
+- README Activities 순서: 코드 스멜 분석 → 1차 리팩토링(네이밍, 하드코드/전역 제거, 함수 추출, 중복 제거) → **그 다음** Unit Test
+- 리팩토링 시 기존·신규 테스트 **Green** 유지 (Red → Green → Refactor)
+- SOLID·DRY·의미 있는 네이밍; Magic Number는 named constant 또는 enum으로
+- 고정 크기 배열(10000)·거대 if-else 체인 등 스멜은 `std::vector`, 맵/구조체, 작은 함수로 점진 개선
+- STL 사용 가능; 과도한 추상화·범위 밖 기능 추가 금지
+
+## 테스트 원칙
+- `TEST` / `TEST_F` (fixture 필요 시) — `SHealthBMITest.cpp`
+- 우선순위: BMI 계산 → 연령대 평균 보정(weight=0) → BMI 분류 경계 → 통계 비율 → 파일/예외
+- 경계값: BMI 18.5, 23, 25; 연령 19/20/29/30; weight/height 0; 빈 파일·헤더만
+- Golden Master: `SHealthBMI` stdout을 baseline과 비교 (회귀 방지)
+- 빌드: `mkdir build && cd build && cmake .. && cmake --build . && ctest`
+
+## AI 작업 시 필수
+1. 작업 전 **docs/** 기존 문서 읽기
+2. 작업 후 **docs/** 에 해당 step 산출물 저장
+3. Wrap-up: **Report/** 보고서 + **Prompting/** Transcript
+4. commit 메시지는 whitespace-safe (예: `04_리팩토링_Refactoring_Support`)
+
+## 금지·주의
+- 요청 없는 대규모 아키텍처 변경·커밋·force push 금지
+- `shealth.dat` 실데이터를 테스트에 하드코딩하지 말고 fixture/임시 파일 사용
+- BMI 경계 구현과 README 정의 불일치 시 문서에 명시 후 수정 제안
