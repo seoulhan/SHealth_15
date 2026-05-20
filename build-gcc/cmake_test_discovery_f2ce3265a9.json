@@ -1,5 +1,5 @@
 {
-  "tests": 38,
+  "tests": 39,
   "name": "AllTests",
   "testsuites": [
     {
@@ -56,7 +56,7 @@
     },
     {
       "name": "SHealthBMITestFixture",
-      "tests": 30,
+      "tests": 31,
       "testsuite": [
         {
           "name": "TC_BMI_01_StandardFormulaOverweight",
@@ -176,37 +176,42 @@
         {
           "name": "TC_EXC_06_MalformedCsvNonNumericAge",
           "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
-          "line": 325
+          "line": 322
+        },
+        {
+          "name": "TC_EXC_11_MalformedCsvSkipsBadRowLoadsValid",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 332
         },
         {
           "name": "TC_EXC_07_BlankLineStopsLoading",
           "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
-          "line": 335
+          "line": 340
         },
         {
           "name": "TC_EXC_08_InvalidGetBmiRatioArgs",
           "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
-          "line": 345
+          "line": 350
         },
         {
           "name": "TC_EXC_09_EmptyPath",
           "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
-          "line": 352
+          "line": 357
         },
         {
           "name": "TC_EXC_10_CheckinFixtureRelativePath",
           "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
-          "line": 356
+          "line": 361
         },
         {
           "name": "TC_HGT_01_HeightZeroWeightPositive",
           "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
-          "line": 367
+          "line": 372
         },
         {
           "name": "TC_HGT_02_HeightZeroWeightZero",
           "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
-          "line": 377
+          "line": 382
         }
       ]
     }
