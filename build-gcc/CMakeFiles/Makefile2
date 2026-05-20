@@ -65,6 +65,7 @@ CMAKE_BINARY_DIR = C:\DEV\SHealth_15\build-gcc
 all: CMakeFiles/shealth_lib.dir/all
 all: CMakeFiles/SHealthBMI.dir/all
 all: CMakeFiles/SHealthBMITest.dir/all
+all: CMakeFiles/SHealthGoldenTest.dir/all
 all: _deps/googletest-build/all
 .PHONY : all
 
@@ -72,6 +73,7 @@ all: _deps/googletest-build/all
 codegen: CMakeFiles/shealth_lib.dir/codegen
 codegen: CMakeFiles/SHealthBMI.dir/codegen
 codegen: CMakeFiles/SHealthBMITest.dir/codegen
+codegen: CMakeFiles/SHealthGoldenTest.dir/codegen
 codegen: _deps/googletest-build/codegen
 .PHONY : codegen
 
@@ -83,6 +85,7 @@ preinstall: _deps/googletest-build/preinstall
 clean: CMakeFiles/shealth_lib.dir/clean
 clean: CMakeFiles/SHealthBMI.dir/clean
 clean: CMakeFiles/SHealthBMITest.dir/clean
+clean: CMakeFiles/SHealthGoldenTest.dir/clean
 clean: _deps/googletest-build/clean
 .PHONY : clean
 
@@ -159,7 +162,7 @@ _deps/googletest-build/googletest/clean: _deps/googletest-build/googletest/CMake
 CMakeFiles/shealth_lib.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\shealth_lib.dir\build.make CMakeFiles/shealth_lib.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\shealth_lib.dir\build.make CMakeFiles/shealth_lib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV\SHealth_15\build-gcc\CMakeFiles --progress-num=13,14 "Built target shealth_lib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV\SHealth_15\build-gcc\CMakeFiles --progress-num=15,16 "Built target shealth_lib"
 .PHONY : CMakeFiles/shealth_lib.dir/all
 
 # Build rule for subdir invocation for target.
@@ -176,7 +179,7 @@ shealth_lib: CMakeFiles/shealth_lib.dir/rule
 # codegen rule for target.
 CMakeFiles/shealth_lib.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\shealth_lib.dir\build.make CMakeFiles/shealth_lib.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV\SHealth_15\build-gcc\CMakeFiles --progress-num=13,14 "Finished codegen for target shealth_lib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV\SHealth_15\build-gcc\CMakeFiles --progress-num=15,16 "Finished codegen for target shealth_lib"
 .PHONY : CMakeFiles/shealth_lib.dir/codegen
 
 # clean rule for target.
@@ -251,13 +254,47 @@ CMakeFiles/SHealthBMITest.dir/clean:
 .PHONY : CMakeFiles/SHealthBMITest.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/SHealthGoldenTest.dir
+
+# All Build rule for target.
+CMakeFiles/SHealthGoldenTest.dir/all: CMakeFiles/SHealthBMI.dir/all
+CMakeFiles/SHealthGoldenTest.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
+CMakeFiles/SHealthGoldenTest.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SHealthGoldenTest.dir\build.make CMakeFiles/SHealthGoldenTest.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SHealthGoldenTest.dir\build.make CMakeFiles/SHealthGoldenTest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV\SHealth_15\build-gcc\CMakeFiles --progress-num=5,6 "Built target SHealthGoldenTest"
+.PHONY : CMakeFiles/SHealthGoldenTest.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/SHealthGoldenTest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\DEV\SHealth_15\build-gcc\CMakeFiles 10
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/SHealthGoldenTest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\DEV\SHealth_15\build-gcc\CMakeFiles 0
+.PHONY : CMakeFiles/SHealthGoldenTest.dir/rule
+
+# Convenience name for target.
+SHealthGoldenTest: CMakeFiles/SHealthGoldenTest.dir/rule
+.PHONY : SHealthGoldenTest
+
+# codegen rule for target.
+CMakeFiles/SHealthGoldenTest.dir/codegen: CMakeFiles/SHealthBMI.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SHealthGoldenTest.dir\build.make CMakeFiles/SHealthGoldenTest.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV\SHealth_15\build-gcc\CMakeFiles --progress-num=5,6 "Finished codegen for target SHealthGoldenTest"
+.PHONY : CMakeFiles/SHealthGoldenTest.dir/codegen
+
+# clean rule for target.
+CMakeFiles/SHealthGoldenTest.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SHealthGoldenTest.dir\build.make CMakeFiles/SHealthGoldenTest.dir/clean
+.PHONY : CMakeFiles/SHealthGoldenTest.dir/clean
+
+#=============================================================================
 # Target rules for target _deps/googletest-build/googlemock/CMakeFiles/gmock.dir
 
 # All Build rule for target.
 _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googlemock\CMakeFiles\gmock.dir\build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googlemock\CMakeFiles\gmock.dir\build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV\SHealth_15\build-gcc\CMakeFiles --progress-num=5,6 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV\SHealth_15\build-gcc\CMakeFiles --progress-num=7,8 "Built target gmock"
 .PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -274,7 +311,7 @@ gmock: _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/rule
 # codegen rule for target.
 _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googlemock\CMakeFiles\gmock.dir\build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV\SHealth_15\build-gcc\CMakeFiles --progress-num=5,6 "Finished codegen for target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV\SHealth_15\build-gcc\CMakeFiles --progress-num=7,8 "Finished codegen for target gmock"
 .PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/codegen
 
 # clean rule for target.
@@ -290,7 +327,7 @@ _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all: _deps/googletes
 _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV\SHealth_15\build-gcc\CMakeFiles --progress-num=7,8 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV\SHealth_15\build-gcc\CMakeFiles --progress-num=9,10 "Built target gmock_main"
 .PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -307,7 +344,7 @@ gmock_main: _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/rule
 # codegen rule for target.
 _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV\SHealth_15\build-gcc\CMakeFiles --progress-num=7,8 "Finished codegen for target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV\SHealth_15\build-gcc\CMakeFiles --progress-num=9,10 "Finished codegen for target gmock_main"
 .PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/codegen
 
 # clean rule for target.
@@ -322,7 +359,7 @@ _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/clean:
 _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all:
 	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV\SHealth_15\build-gcc\CMakeFiles --progress-num=9,10 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV\SHealth_15\build-gcc\CMakeFiles --progress-num=11,12 "Built target gtest"
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -339,7 +376,7 @@ gtest: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/rule
 # codegen rule for target.
 _deps/googletest-build/googletest/CMakeFiles/gtest.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV\SHealth_15\build-gcc\CMakeFiles --progress-num=9,10 "Finished codegen for target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV\SHealth_15\build-gcc\CMakeFiles --progress-num=11,12 "Finished codegen for target gtest"
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest.dir/codegen
 
 # clean rule for target.
@@ -354,7 +391,7 @@ _deps/googletest-build/googletest/CMakeFiles/gtest.dir/clean:
 _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV\SHealth_15\build-gcc\CMakeFiles --progress-num=11,12 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV\SHealth_15\build-gcc\CMakeFiles --progress-num=13,14 "Built target gtest_main"
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -371,7 +408,7 @@ gtest_main: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/rule
 # codegen rule for target.
 _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV\SHealth_15\build-gcc\CMakeFiles --progress-num=11,12 "Finished codegen for target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV\SHealth_15\build-gcc\CMakeFiles --progress-num=13,14 "Finished codegen for target gtest_main"
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/codegen
 
 # clean rule for target.

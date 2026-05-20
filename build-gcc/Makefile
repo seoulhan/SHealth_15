@@ -210,6 +210,19 @@ SHealthBMITest/fast:
 .PHONY : SHealthBMITest/fast
 
 #=============================================================================
+# Target rules for targets named SHealthGoldenTest
+
+# Build rule for target.
+SHealthGoldenTest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 SHealthGoldenTest
+.PHONY : SHealthGoldenTest
+
+# fast build rule for target.
+SHealthGoldenTest/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SHealthGoldenTest.dir\build.make CMakeFiles/SHealthGoldenTest.dir/build
+.PHONY : SHealthGoldenTest/fast
+
+#=============================================================================
 # Target rules for targets named gmock
 
 # Build rule for target.
@@ -333,6 +346,30 @@ src/test/cpp/SHealthBMITest.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SHealthBMITest.dir\build.make CMakeFiles/SHealthBMITest.dir/src/test/cpp/SHealthBMITest.cpp.s
 .PHONY : src/test/cpp/SHealthBMITest.cpp.s
 
+src/test/cpp/SHealthGoldenTest.obj: src/test/cpp/SHealthGoldenTest.cpp.obj
+.PHONY : src/test/cpp/SHealthGoldenTest.obj
+
+# target to build an object file
+src/test/cpp/SHealthGoldenTest.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SHealthGoldenTest.dir\build.make CMakeFiles/SHealthGoldenTest.dir/src/test/cpp/SHealthGoldenTest.cpp.obj
+.PHONY : src/test/cpp/SHealthGoldenTest.cpp.obj
+
+src/test/cpp/SHealthGoldenTest.i: src/test/cpp/SHealthGoldenTest.cpp.i
+.PHONY : src/test/cpp/SHealthGoldenTest.i
+
+# target to preprocess a source file
+src/test/cpp/SHealthGoldenTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SHealthGoldenTest.dir\build.make CMakeFiles/SHealthGoldenTest.dir/src/test/cpp/SHealthGoldenTest.cpp.i
+.PHONY : src/test/cpp/SHealthGoldenTest.cpp.i
+
+src/test/cpp/SHealthGoldenTest.s: src/test/cpp/SHealthGoldenTest.cpp.s
+.PHONY : src/test/cpp/SHealthGoldenTest.s
+
+# target to generate assembly for a file
+src/test/cpp/SHealthGoldenTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SHealthGoldenTest.dir\build.make CMakeFiles/SHealthGoldenTest.dir/src/test/cpp/SHealthGoldenTest.cpp.s
+.PHONY : src/test/cpp/SHealthGoldenTest.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -348,6 +385,7 @@ help:
 	@echo ... test
 	@echo ... SHealthBMI
 	@echo ... SHealthBMITest
+	@echo ... SHealthGoldenTest
 	@echo ... gmock
 	@echo ... gmock_main
 	@echo ... gtest
@@ -362,6 +400,9 @@ help:
 	@echo ... src/test/cpp/SHealthBMITest.obj
 	@echo ... src/test/cpp/SHealthBMITest.i
 	@echo ... src/test/cpp/SHealthBMITest.s
+	@echo ... src/test/cpp/SHealthGoldenTest.obj
+	@echo ... src/test/cpp/SHealthGoldenTest.i
+	@echo ... src/test/cpp/SHealthGoldenTest.s
 .PHONY : help
 
 

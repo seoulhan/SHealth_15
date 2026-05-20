@@ -46,6 +46,13 @@ cd build
 ctest
 ```
 
+Golden Master만 실행:
+```bash
+ctest -R SHealthGoldenMaster -V
+```
+
+baseline 갱신(의도적 출력 변경 후): 저장소 루트에서 `tests/golden/update_baseline.ps1` — 자세한 규칙은 `docs/golden_master.md`.
+
 
 ## 프로젝트 구조
 ```
@@ -57,7 +64,12 @@ src/
     SHealth.cpp        - BMI 계산 및 통계 로직 구현
     SHealthBMI.cpp     - main 함수 (프로그램 진입점)
   test/cpp/
-    SHealthBMITest.cpp - Google Test 기반 단위 테스트
+    SHealthBMITest.cpp   - Google Test 기반 단위 테스트
+    SHealthGoldenTest.cpp - Golden Master (main stdout 회귀)
+tests/golden/
+  shealth_bmi_stdout.golden.txt - baseline stdout (shealth.dat)
+  update_baseline.ps1           - baseline 갱신 스크립트
+docs/golden_master.md           - Golden Master 절차·규칙
 ```
 
 

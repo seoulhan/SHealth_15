@@ -1,0 +1,17 @@
+{
+  "tests": 1,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "SHealthGoldenMaster",
+      "tests": 1,
+      "testsuite": [
+        {
+          "name": "TC_GM_01_SHealthBMI_stdout_matches_baseline",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthGoldenTest.cpp",
+          "line": 170
+        }
+      ]
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 C:/DEV/SHealth_15/build-gcc/CMakeFiles/shealth_lib.dir
 C:/DEV/SHealth_15/build-gcc/CMakeFiles/SHealthBMI.dir
 C:/DEV/SHealth_15/build-gcc/CMakeFiles/SHealthBMITest.dir
+C:/DEV/SHealth_15/build-gcc/CMakeFiles/SHealthGoldenTest.dir
 C:/DEV/SHealth_15/build-gcc/CMakeFiles/test.dir
 C:/DEV/SHealth_15/build-gcc/CMakeFiles/edit_cache.dir
 C:/DEV/SHealth_15/build-gcc/CMakeFiles/rebuild_cache.dir

@@ -15,10 +15,10 @@
 
 | 구분 | 건수 | 비고 |
 |------|------|------|
-| **Open** | 6 | 코드·스펙·회귀 갭 |
+| **Open** | 5 | 코드·스펙·회귀 갭 |
 | **Fixed** | 1 | README BMI=25 경계 (DEF-007) |
 | **Won't fix** | 3 | 설계 수용·문서화 계약 (DEF-008~010) |
-| **ctest (P0)** | 38 / 38 Passed | 실패 TC 없음; Open 결함은 As-Is·미구현·회귀 공백 |
+| **ctest** | 38 unit + 1 Golden | Golden: `SHealthGoldenMaster.TC_GM_01_*` (Step 09) |
 
 **우선 조치:** DEF-001 (CSV 컬럼 부족 → 프로세스 abort, **High**), DEF-002 (FR-S02 height=0, **Medium**).
 
@@ -243,37 +243,37 @@ README: *「18.5초과 23미만 정상체중, 23이상 25미만 과체중, **25�
 
 ---
 
-### DEF-006 — Golden Master / E2E 회귀 테스트 미구축
+### DEF-006 — Golden Master / E2E 회귀 테스트 — **Fixed**
 
 | 필드 | 내용 |
 |------|------|
 | **결함 ID** | DEF-006 |
 | **이슈 ID** | GM-01 |
 | **제목** | `SHealthBMI` stdout Golden Master 자동 회귀 TC 없음 |
-| **상태** | **Open** |
-| **Severity** | **Medium** |
-| **Priority** | **P2** |
+| **상태** | **Fixed** |
+| **Severity** | — (Closed) |
+| **Priority** | — |
 
-**재현 단계**
+**재현 단계 (과거)**
 
 1. `build-gcc/SHealthBMI.exe` 실행 (CWD에 `shealth.dat`).
-2. 6연령대 stdout 수동 확인.
+2. 6연령대 stdout 수동 확인만 가능.
 
-**기대 결과**
+**기대 / 실제 (현행)**
 
-- NFR-05: `shealth.dat` 기준 stdout 문자열 **자동 비교** + `ctest` 등록.
-
-**실제 결과**
-
-- 수동 스모크만 수행 (Step 07); **자동 TC 없음**.
+| | 내용 |
+|---|------|
+| **기대 (NFR-05)** | `shealth.dat` 기준 stdout **자동 비교** + `ctest` 등록 |
+| **실제 (Step 09)** | `tests/golden/shealth_bmi_stdout.golden.txt`, `SHealthGoldenTest`, `ctest -R SHealthGoldenMaster` |
 
 **추적성**
 
 | 유형 | ID / 이름 |
 |------|-----------|
 | 요구사항 | NFR-05, FR-08, §6.3 main 출력 계약 |
-| 테스트 | **없음** (Step 09 예정) |
-| 소스 | `SHealthBMI.cpp` (main `printf`) |
+| 테스트 | `SHealthGoldenMaster.TC_GM_01_SHealthBMI_stdout_matches_baseline` |
+| 문서 | `docs/golden_master.md` |
+| 소스 | `SHealthBMI.cpp`, `src/test/cpp/SHealthGoldenTest.cpp` |
 
 ---
 
@@ -395,7 +395,7 @@ README: *「18.5초과 23미만 정상체중, 23이상 25미만 과체중, **25�
 | DEF-003 | I-09b | FR-01 | `TC_EXC_06_MalformedCsvNonNumericAge` | `loadRecordsFromFile` L75–77 | Open | Med | P1 |
 | DEF-004 | I-10 | FR-05 | `TC_HGT_*`, `TC_BMI_03` | `aggregateAgeBandStatistics` L125–159 | Open | Low | P2 |
 | DEF-005 | I-06 | §5.1 | — | `loadRecordsFromFile` L78 | Open | Med | P2 |
-| DEF-006 | GM-01 | NFR-05 | — | `SHealthBMI.cpp` | Open | Med | P2 |
+| DEF-006 | GM-01 | NFR-05 | `TC_GM_01` (`SHealthGoldenTest`) | `SHealthBMI.cpp` | **Fixed** | — | — |
 | DEF-007 | I-01 | FR-04 | `TC_CLS_06`, `TC_BMI_02` | `classifyBmi` L25–35 | **Fixed** | — | — |
 | DEF-008 | I-02 | FR-03 | `TC_IMP_03` | `imputeMissingWeightsByAgeBand` | Won't fix | Low | P3 |
 | DEF-009 | I-05 | FR-05 | `TC_RAT_05` | `aggregateAgeBandStatistics` | Won't fix | Low | P3 |
@@ -413,7 +413,7 @@ README: *「18.5초과 23미만 정상체중, 23이상 25미만 과체중, **25�
 | P1 | DEF-003 | parse try-catch, 부분 로드 정책 | 08 |
 | P2 | DEF-004 | 비율 합 계약 문서·TC 합의 | 08 |
 | P2 | DEF-005 | `MAX_RECORDS` 방어 또는 `vector` | 08+ |
-| P2 | DEF-006 | Golden Master + ctest | 09 |
+| P2 | DEF-006 | Golden Master + ctest | **09 (완료)** |
 | P3 | DEF-010, DEF-011 | API·CLI 경로 | 10~11 |
 
 ---
@@ -424,4 +424,4 @@ README: *「18.5초과 23미만 정상체중, 23이상 25미만 과체중, **25�
 |------|------|------|
 | 1.0 | 2026-05-20 | Step 08 — `defect_detection.md` §9 후보 티켓화, README 경계 별도 §3 |
 
-**다음 Step:** DEF-001/002 코드 수정 또는 Step 09 Golden Master.
+**다음 Step:** DEF-001/002 코드 수정, Step 10 결함 관리.

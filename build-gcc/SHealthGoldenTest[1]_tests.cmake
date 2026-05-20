@@ -1,0 +1,3 @@
+add_test([=[SHealthGoldenMaster.TC_GM_01_SHealthBMI_stdout_matches_baseline]=]  C:/DEV/SHealth_15/build-gcc/SHealthGoldenTest.exe [==[--gtest_filter=SHealthGoldenMaster.TC_GM_01_SHealthBMI_stdout_matches_baseline]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[SHealthGoldenMaster.TC_GM_01_SHealthBMI_stdout_matches_baseline]=]  PROPERTIES DEF_SOURCE_LINE [==[C:\DEV\SHealth_15\src\test\cpp\SHealthGoldenTest.cpp:170]==] WORKING_DIRECTORY C:/DEV/SHealth_15/build-gcc SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set(  SHealthGoldenTest_TESTS SHealthGoldenMaster.TC_GM_01_SHealthBMI_stdout_matches_baseline)

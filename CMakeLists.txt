@@ -35,3 +35,15 @@ target_link_libraries(SHealthBMITest PRIVATE shealth_lib GTest::gtest_main)
 
 include(GoogleTest)
 gtest_discover_tests(SHealthBMITest)
+
+# Golden Master (SHealthBMI stdout vs shealth.dat baseline)
+add_executable(SHealthGoldenTest src/test/cpp/SHealthGoldenTest.cpp)
+target_compile_definitions(SHealthGoldenTest PRIVATE
+    "SHEALTH_GOLDEN_BASELINE_FILE=\"${CMAKE_SOURCE_DIR}/tests/golden/shealth_bmi_stdout.golden.txt\""
+    "SHEALTH_GOLDEN_DATA_FILE=\"${CMAKE_SOURCE_DIR}/shealth.dat\""
+    "SHEALTH_GOLDEN_BINARY_DIR=\"${CMAKE_BINARY_DIR}\""
+    "SHEALTH_GOLDEN_SHEALTH_BMI_EXE=\"$<TARGET_FILE:SHealthBMI>\""
+)
+target_link_libraries(SHealthGoldenTest PRIVATE GTest::gtest_main)
+add_dependencies(SHealthGoldenTest SHealthBMI)
+gtest_discover_tests(SHealthGoldenTest)

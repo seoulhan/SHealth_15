@@ -93,6 +93,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/shealth_lib.dir/DependInfo.cmake"
   "CMakeFiles/SHealthBMI.dir/DependInfo.cmake"
   "CMakeFiles/SHealthBMITest.dir/DependInfo.cmake"
+  "CMakeFiles/SHealthGoldenTest.dir/DependInfo.cmake"
   "_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
   "_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake"
   "_deps/googletest-build/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
