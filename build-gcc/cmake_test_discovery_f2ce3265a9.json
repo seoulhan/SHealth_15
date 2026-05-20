@@ -1,0 +1,279 @@
+{
+  "tests": 51,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "SHealthBmiClassification",
+      "tests": 7,
+      "testsuite": [
+        {
+          "name": "TC_CLS_01_UnderweightAt185",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 67
+        },
+        {
+          "name": "TC_CLS_02_NormalAbove185",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 71
+        },
+        {
+          "name": "TC_CLS_03_NormalBelow23",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 75
+        },
+        {
+          "name": "TC_CLS_04_OverweightAt23",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 79
+        },
+        {
+          "name": "TC_CLS_05_OverweightBelow25",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 83
+        },
+        {
+          "name": "TC_CLS_06_ObesityAt25",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 87
+        },
+        {
+          "name": "TC_CLS_07_ObesityAbove25",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 91
+        }
+      ]
+    },
+    {
+      "name": "SHealthAgeBand",
+      "tests": 1,
+      "testsuite": [
+        {
+          "name": "TC_AGE_IsInAgeBandBoundaries",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 97
+        }
+      ]
+    },
+    {
+      "name": "SHealthBMITestFixture",
+      "tests": 43,
+      "testsuite": [
+        {
+          "name": "TC_BMI_01_StandardFormulaOverweight",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 107
+        },
+        {
+          "name": "TC_BMI_02_CmToMetersObesityAt25",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 116
+        },
+        {
+          "name": "TC_BMI_03_FractionalWeightHeight",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 123
+        },
+        {
+          "name": "TC_IMP_01_BasicImputationSameBmi",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 138
+        },
+        {
+          "name": "TC_IMP_02_ThreeMemberAverage",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 148
+        },
+        {
+          "name": "TC_IMP_03_AllZeroWeightsSkipped",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 161
+        },
+        {
+          "name": "TC_IMP_04_NoCrossBandImputation",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 169
+        },
+        {
+          "name": "TC_IMP_05_BoundaryNormalVsOverweight",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 178
+        },
+        {
+          "name": "TC_CLS_08_FourCategoriesQuarterEach",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 189
+        },
+        {
+          "name": "TC_AGE_01_Age19Excluded",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 204
+        },
+        {
+          "name": "TC_AGE_02_Age20Included",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 211
+        },
+        {
+          "name": "TC_AGE_03_Age29Vs30",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 217
+        },
+        {
+          "name": "TC_AGE_04_Age70Vs79",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 226
+        },
+        {
+          "name": "TC_RAT_01_ValidAgeClassAndTypes",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 237
+        },
+        {
+          "name": "TC_RAT_02_InvalidAgeClass",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 253
+        },
+        {
+          "name": "TC_RAT_03_InvalidType",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 261
+        },
+        {
+          "name": "TC_RAT_04_NoPriorCalculateBmi",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 269
+        },
+        {
+          "name": "TC_RAT_05_EmptyAgeBand",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 274
+        },
+        {
+          "name": "TC_EXC_01_FileNotFound",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 282
+        },
+        {
+          "name": "TC_EXC_02_EmptyFile",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 287
+        },
+        {
+          "name": "TC_EXC_03_HeaderOnly",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 294
+        },
+        {
+          "name": "TC_EXC_04_HeaderWithTrailingNewline",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 303
+        },
+        {
+          "name": "TC_EXC_05_MalformedCsvTooFewColumns",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 312
+        },
+        {
+          "name": "TC_EXC_06_MalformedCsvNonNumericAge",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 322
+        },
+        {
+          "name": "TC_EXC_11_MalformedCsvSkipsBadRowLoadsValid",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 332
+        },
+        {
+          "name": "TC_EXC_07_BlankLineStopsLoading",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 340
+        },
+        {
+          "name": "TC_EXC_08_InvalidGetBmiRatioArgs",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 350
+        },
+        {
+          "name": "TC_EXC_09_EmptyPath",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 357
+        },
+        {
+          "name": "TC_EXC_10_CheckinFixtureRelativePath",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 361
+        },
+        {
+          "name": "TC_HGT_10_ThirtyBandAverageHeightImputation",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 372
+        },
+        {
+          "name": "TC_HGT_11_FortyBandAllZeroHeightsSkipped",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 393
+        },
+        {
+          "name": "TC_HGT_01_HeightZeroWeightPositive",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 407
+        },
+        {
+          "name": "TC_HGT_02_HeightZeroWeightZero",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 417
+        },
+        {
+          "name": "TC_API_01_GetAgeBandRatiosMatchesLegacyGetBmiRatio",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 447
+        },
+        {
+          "name": "TC_API_02_SixByFourMatrixSnapshotOnRealData",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 461
+        },
+        {
+          "name": "TC_API_03_InvalidAgeClassReturnsZeroRatios",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 495
+        },
+        {
+          "name": "TC_API_04_SingleBandFourCategoriesSumToOneHundred",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 506
+        },
+        {
+          "name": "TC_LST_01_ThreeUsersOnlyNormalIdListed",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 523
+        },
+        {
+          "name": "TC_LST_02_BoundaryBmi185And23Excluded",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 535
+        },
+        {
+          "name": "TC_LST_03_NoCalculateBmiReturnsEmptyList",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 559
+        },
+        {
+          "name": "TC_GLB_01_FourCategoriesSumToOneHundred",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 566
+        },
+        {
+          "name": "TC_GLB_02_GlobalIndependentOfAgeBandApi",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 580
+        },
+        {
+          "name": "TC_GLB_03_NoCalculateBmiReturnsZeroGlobalRatios",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 592
+        }
+      ]
+    }
+  ]
+}

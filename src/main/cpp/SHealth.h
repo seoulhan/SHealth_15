@@ -3,26 +3,34 @@
 #include <string>
 #include <vector>
 
+#include "SHealthDomain.h"
+#include "SHealthTypes.h"
+
 class SHealth {
 public:
     int calculateBmi(const std::string& filename);
     double getBmiRatio(int ageClass, int type);
+    const AgeBandRatios& getAgeBandRatios(int ageClass) const;
+    std::vector<int> getNormalBmiUserIds() const;
+    const AgeBandRatios& getGlobalBmiRatios() const;
+
+    static BmiCategory testClassifyBmi(double bmi);
+    static bool testIsInAgeBand(int age, int bandStart);
 
 private:
-    int count = 0;
-    int ages[10000];
-    double heights[10000];
-    double weights[10000];
-    double bmis[10000];
+    static constexpr int MAX_RECORDS = 10000;
 
-    double underweight20 = 0, underweight30 = 0, underweight40 = 0;
-    double underweight50 = 0, underweight60 = 0, underweight70 = 0;
-    double normalweight20 = 0, normalweight30 = 0, normalweight40 = 0;
-    double normalweight50 = 0, normalweight60 = 0, normalweight70 = 0;
-    double overweight20 = 0, overweight30 = 0, overweight40 = 0;
-    double overweight50 = 0, overweight60 = 0, overweight70 = 0;
-    double obesity20 = 0, obesity30 = 0, obesity40 = 0;
-    double obesity50 = 0, obesity60 = 0, obesity70 = 0;
+    int recordCount = 0;
+    int ids[MAX_RECORDS];
+    int ages[MAX_RECORDS];
+    double heights[MAX_RECORDS];
+    double weights[MAX_RECORDS];
+    double bmis[MAX_RECORDS];
 
-    std::vector<std::string> split(const std::string& line, char delimiter);
+    bool statisticsReady = false;
+    AgeBandRatios ageBandRatios[SHealthDomain::AGE_BAND_COUNT];
+    AgeBandRatios globalBmiRatios{};
+    std::vector<int> normalBmiUserIds_;
+
+    void resetStatisticsState();
 };

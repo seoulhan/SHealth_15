@@ -1,0 +1,1412 @@
+Start testing: May 20 11:36 대한민국 표준시
+----------------------------------------------------------
+1/52 Testing: SHealthBmiClassification.TC_CLS_01_UnderweightAt185
+1/52 Test: SHealthBmiClassification.TC_CLS_01_UnderweightAt185
+Command: "C:/DEV/SHealth_15/build-gcc/SHealthBMITest.exe" "--gtest_filter=SHealthBmiClassification.TC_CLS_01_UnderweightAt185" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV/SHealth_15/build-gcc
+"SHealthBmiClassification.TC_CLS_01_UnderweightAt185" start time: May 20 11:36 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV\SHealth_15\build-gcc\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = SHealthBmiClassification.TC_CLS_01_UnderweightAt185
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SHealthBmiClassification
+[ RUN      ] SHealthBmiClassification.TC_CLS_01_UnderweightAt185
+[       OK ] SHealthBmiClassification.TC_CLS_01_UnderweightAt185 (0 ms)
+[----------] 1 test from SHealthBmiClassification (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"SHealthBmiClassification.TC_CLS_01_UnderweightAt185" end time: May 20 11:36 대한민국 표준시
+"SHealthBmiClassification.TC_CLS_01_UnderweightAt185" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/52 Testing: SHealthBmiClassification.TC_CLS_02_NormalAbove185
+2/52 Test: SHealthBmiClassification.TC_CLS_02_NormalAbove185
+Command: "C:/DEV/SHealth_15/build-gcc/SHealthBMITest.exe" "--gtest_filter=SHealthBmiClassification.TC_CLS_02_NormalAbove185" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV/SHealth_15/build-gcc
+"SHealthBmiClassification.TC_CLS_02_NormalAbove185" start time: May 20 11:36 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV\SHealth_15\build-gcc\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = SHealthBmiClassification.TC_CLS_02_NormalAbove185
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SHealthBmiClassification
+[ RUN      ] SHealthBmiClassification.TC_CLS_02_NormalAbove185
+[       OK ] SHealthBmiClassification.TC_CLS_02_NormalAbove185 (0 ms)
+[----------] 1 test from SHealthBmiClassification (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"SHealthBmiClassification.TC_CLS_02_NormalAbove185" end time: May 20 11:36 대한민국 표준시
+"SHealthBmiClassification.TC_CLS_02_NormalAbove185" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/52 Testing: SHealthBmiClassification.TC_CLS_03_NormalBelow23
+3/52 Test: SHealthBmiClassification.TC_CLS_03_NormalBelow23
+Command: "C:/DEV/SHealth_15/build-gcc/SHealthBMITest.exe" "--gtest_filter=SHealthBmiClassification.TC_CLS_03_NormalBelow23" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV/SHealth_15/build-gcc
+"SHealthBmiClassification.TC_CLS_03_NormalBelow23" start time: May 20 11:36 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV\SHealth_15\build-gcc\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = SHealthBmiClassification.TC_CLS_03_NormalBelow23
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SHealthBmiClassification
+[ RUN      ] SHealthBmiClassification.TC_CLS_03_NormalBelow23
+[       OK ] SHealthBmiClassification.TC_CLS_03_NormalBelow23 (0 ms)
+[----------] 1 test from SHealthBmiClassification (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"SHealthBmiClassification.TC_CLS_03_NormalBelow23" end time: May 20 11:36 대한민국 표준시
+"SHealthBmiClassification.TC_CLS_03_NormalBelow23" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/52 Testing: SHealthBmiClassification.TC_CLS_04_OverweightAt23
+4/52 Test: SHealthBmiClassification.TC_CLS_04_OverweightAt23
+Command: "C:/DEV/SHealth_15/build-gcc/SHealthBMITest.exe" "--gtest_filter=SHealthBmiClassification.TC_CLS_04_OverweightAt23" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV/SHealth_15/build-gcc
+"SHealthBmiClassification.TC_CLS_04_OverweightAt23" start time: May 20 11:36 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV\SHealth_15\build-gcc\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = SHealthBmiClassification.TC_CLS_04_OverweightAt23
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SHealthBmiClassification
+[ RUN      ] SHealthBmiClassification.TC_CLS_04_OverweightAt23
+[       OK ] SHealthBmiClassification.TC_CLS_04_OverweightAt23 (0 ms)
+[----------] 1 test from SHealthBmiClassification (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"SHealthBmiClassification.TC_CLS_04_OverweightAt23" end time: May 20 11:36 대한민국 표준시
+"SHealthBmiClassification.TC_CLS_04_OverweightAt23" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/52 Testing: SHealthBmiClassification.TC_CLS_05_OverweightBelow25
+5/52 Test: SHealthBmiClassification.TC_CLS_05_OverweightBelow25
+Command: "C:/DEV/SHealth_15/build-gcc/SHealthBMITest.exe" "--gtest_filter=SHealthBmiClassification.TC_CLS_05_OverweightBelow25" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV/SHealth_15/build-gcc
+"SHealthBmiClassification.TC_CLS_05_OverweightBelow25" start time: May 20 11:36 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV\SHealth_15\build-gcc\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = SHealthBmiClassification.TC_CLS_05_OverweightBelow25
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SHealthBmiClassification
+[ RUN      ] SHealthBmiClassification.TC_CLS_05_OverweightBelow25
+[       OK ] SHealthBmiClassification.TC_CLS_05_OverweightBelow25 (0 ms)
+[----------] 1 test from SHealthBmiClassification (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"SHealthBmiClassification.TC_CLS_05_OverweightBelow25" end time: May 20 11:36 대한민국 표준시
+"SHealthBmiClassification.TC_CLS_05_OverweightBelow25" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/52 Testing: SHealthBmiClassification.TC_CLS_06_ObesityAt25
+6/52 Test: SHealthBmiClassification.TC_CLS_06_ObesityAt25
+Command: "C:/DEV/SHealth_15/build-gcc/SHealthBMITest.exe" "--gtest_filter=SHealthBmiClassification.TC_CLS_06_ObesityAt25" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV/SHealth_15/build-gcc
+"SHealthBmiClassification.TC_CLS_06_ObesityAt25" start time: May 20 11:36 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV\SHealth_15\build-gcc\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = SHealthBmiClassification.TC_CLS_06_ObesityAt25
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SHealthBmiClassification
+[ RUN      ] SHealthBmiClassification.TC_CLS_06_ObesityAt25
+[       OK ] SHealthBmiClassification.TC_CLS_06_ObesityAt25 (0 ms)
+[----------] 1 test from SHealthBmiClassification (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"SHealthBmiClassification.TC_CLS_06_ObesityAt25" end time: May 20 11:36 대한민국 표준시
+"SHealthBmiClassification.TC_CLS_06_ObesityAt25" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/52 Testing: SHealthBmiClassification.TC_CLS_07_ObesityAbove25
+7/52 Test: SHealthBmiClassification.TC_CLS_07_ObesityAbove25
+Command: "C:/DEV/SHealth_15/build-gcc/SHealthBMITest.exe" "--gtest_filter=SHealthBmiClassification.TC_CLS_07_ObesityAbove25" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV/SHealth_15/build-gcc
+"SHealthBmiClassification.TC_CLS_07_ObesityAbove25" start time: May 20 11:36 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV\SHealth_15\build-gcc\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = SHealthBmiClassification.TC_CLS_07_ObesityAbove25
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SHealthBmiClassification
+[ RUN      ] SHealthBmiClassification.TC_CLS_07_ObesityAbove25
+[       OK ] SHealthBmiClassification.TC_CLS_07_ObesityAbove25 (0 ms)
+[----------] 1 test from SHealthBmiClassification (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"SHealthBmiClassification.TC_CLS_07_ObesityAbove25" end time: May 20 11:36 대한민국 표준시
+"SHealthBmiClassification.TC_CLS_07_ObesityAbove25" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/52 Testing: SHealthAgeBand.TC_AGE_IsInAgeBandBoundaries
+8/52 Test: SHealthAgeBand.TC_AGE_IsInAgeBandBoundaries
+Command: "C:/DEV/SHealth_15/build-gcc/SHealthBMITest.exe" "--gtest_filter=SHealthAgeBand.TC_AGE_IsInAgeBandBoundaries" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV/SHealth_15/build-gcc
+"SHealthAgeBand.TC_AGE_IsInAgeBandBoundaries" start time: May 20 11:36 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV\SHealth_15\build-gcc\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = SHealthAgeBand.TC_AGE_IsInAgeBandBoundaries
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SHealthAgeBand
+[ RUN      ] SHealthAgeBand.TC_AGE_IsInAgeBandBoundaries
+[       OK ] SHealthAgeBand.TC_AGE_IsInAgeBandBoundaries (0 ms)
+[----------] 1 test from SHealthAgeBand (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"SHealthAgeBand.TC_AGE_IsInAgeBandBoundaries" end time: May 20 11:36 대한민국 표준시
+"SHealthAgeBand.TC_AGE_IsInAgeBandBoundaries" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/52 Testing: SHealthBMITestFixture.TC_BMI_01_StandardFormulaOverweight
+9/52 Test: SHealthBMITestFixture.TC_BMI_01_StandardFormulaOverweight
+Command: "C:/DEV/SHealth_15/build-gcc/SHealthBMITest.exe" "--gtest_filter=SHealthBMITestFixture.TC_BMI_01_StandardFormulaOverweight" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV/SHealth_15/build-gcc
+"SHealthBMITestFixture.TC_BMI_01_StandardFormulaOverweight" start time: May 20 11:36 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV\SHealth_15\build-gcc\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = SHealthBMITestFixture.TC_BMI_01_StandardFormulaOverweight
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SHealthBMITestFixture
+[ RUN      ] SHealthBMITestFixture.TC_BMI_01_StandardFormulaOverweight
+[       OK ] SHealthBMITestFixture.TC_BMI_01_StandardFormulaOverweight (5 ms)
+[----------] 1 test from SHealthBMITestFixture (5 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (5 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"SHealthBMITestFixture.TC_BMI_01_StandardFormulaOverweight" end time: May 20 11:36 대한민국 표준시
+"SHealthBMITestFixture.TC_BMI_01_StandardFormulaOverweight" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/52 Testing: SHealthBMITestFixture.TC_BMI_02_CmToMetersObesityAt25
+10/52 Test: SHealthBMITestFixture.TC_BMI_02_CmToMetersObesityAt25
+Command: "C:/DEV/SHealth_15/build-gcc/SHealthBMITest.exe" "--gtest_filter=SHealthBMITestFixture.TC_BMI_02_CmToMetersObesityAt25" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV/SHealth_15/build-gcc
+"SHealthBMITestFixture.TC_BMI_02_CmToMetersObesityAt25" start time: May 20 11:36 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV\SHealth_15\build-gcc\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = SHealthBMITestFixture.TC_BMI_02_CmToMetersObesityAt25
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SHealthBMITestFixture
+[ RUN      ] SHealthBMITestFixture.TC_BMI_02_CmToMetersObesityAt25
+[       OK ] SHealthBMITestFixture.TC_BMI_02_CmToMetersObesityAt25 (3 ms)
+[----------] 1 test from SHealthBMITestFixture (3 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (3 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"SHealthBMITestFixture.TC_BMI_02_CmToMetersObesityAt25" end time: May 20 11:36 대한민국 표준시
+"SHealthBMITestFixture.TC_BMI_02_CmToMetersObesityAt25" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/52 Testing: SHealthBMITestFixture.TC_BMI_03_FractionalWeightHeight
+11/52 Test: SHealthBMITestFixture.TC_BMI_03_FractionalWeightHeight
+Command: "C:/DEV/SHealth_15/build-gcc/SHealthBMITest.exe" "--gtest_filter=SHealthBMITestFixture.TC_BMI_03_FractionalWeightHeight" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV/SHealth_15/build-gcc
+"SHealthBMITestFixture.TC_BMI_03_FractionalWeightHeight" start time: May 20 11:36 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV\SHealth_15\build-gcc\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = SHealthBMITestFixture.TC_BMI_03_FractionalWeightHeight
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SHealthBMITestFixture
+[ RUN      ] SHealthBMITestFixture.TC_BMI_03_FractionalWeightHeight
+[       OK ] SHealthBMITestFixture.TC_BMI_03_FractionalWeightHeight (4 ms)
+[----------] 1 test from SHealthBMITestFixture (4 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (4 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"SHealthBMITestFixture.TC_BMI_03_FractionalWeightHeight" end time: May 20 11:36 대한민국 표준시
+"SHealthBMITestFixture.TC_BMI_03_FractionalWeightHeight" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/52 Testing: SHealthBMITestFixture.TC_IMP_01_BasicImputationSameBmi
+12/52 Test: SHealthBMITestFixture.TC_IMP_01_BasicImputationSameBmi
+Command: "C:/DEV/SHealth_15/build-gcc/SHealthBMITest.exe" "--gtest_filter=SHealthBMITestFixture.TC_IMP_01_BasicImputationSameBmi" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV/SHealth_15/build-gcc
+"SHealthBMITestFixture.TC_IMP_01_BasicImputationSameBmi" start time: May 20 11:36 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV\SHealth_15\build-gcc\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = SHealthBMITestFixture.TC_IMP_01_BasicImputationSameBmi
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SHealthBMITestFixture
+[ RUN      ] SHealthBMITestFixture.TC_IMP_01_BasicImputationSameBmi
+[       OK ] SHealthBMITestFixture.TC_IMP_01_BasicImputationSameBmi (12 ms)
+[----------] 1 test from SHealthBMITestFixture (12 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (12 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"SHealthBMITestFixture.TC_IMP_01_BasicImputationSameBmi" end time: May 20 11:36 대한민국 표준시
+"SHealthBMITestFixture.TC_IMP_01_BasicImputationSameBmi" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/52 Testing: SHealthBMITestFixture.TC_IMP_02_ThreeMemberAverage
+13/52 Test: SHealthBMITestFixture.TC_IMP_02_ThreeMemberAverage
+Command: "C:/DEV/SHealth_15/build-gcc/SHealthBMITest.exe" "--gtest_filter=SHealthBMITestFixture.TC_IMP_02_ThreeMemberAverage" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV/SHealth_15/build-gcc
+"SHealthBMITestFixture.TC_IMP_02_ThreeMemberAverage" start time: May 20 11:36 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV\SHealth_15\build-gcc\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = SHealthBMITestFixture.TC_IMP_02_ThreeMemberAverage
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SHealthBMITestFixture
+[ RUN      ] SHealthBMITestFixture.TC_IMP_02_ThreeMemberAverage
+[       OK ] SHealthBMITestFixture.TC_IMP_02_ThreeMemberAverage (3 ms)
+[----------] 1 test from SHealthBMITestFixture (3 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (3 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"SHealthBMITestFixture.TC_IMP_02_ThreeMemberAverage" end time: May 20 11:36 대한민국 표준시
+"SHealthBMITestFixture.TC_IMP_02_ThreeMemberAverage" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/52 Testing: SHealthBMITestFixture.TC_IMP_03_AllZeroWeightsSkipped
+14/52 Test: SHealthBMITestFixture.TC_IMP_03_AllZeroWeightsSkipped
+Command: "C:/DEV/SHealth_15/build-gcc/SHealthBMITest.exe" "--gtest_filter=SHealthBMITestFixture.TC_IMP_03_AllZeroWeightsSkipped" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV/SHealth_15/build-gcc
+"SHealthBMITestFixture.TC_IMP_03_AllZeroWeightsSkipped" start time: May 20 11:36 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV\SHealth_15\build-gcc\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = SHealthBMITestFixture.TC_IMP_03_AllZeroWeightsSkipped
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SHealthBMITestFixture
+[ RUN      ] SHealthBMITestFixture.TC_IMP_03_AllZeroWeightsSkipped
+[       OK ] SHealthBMITestFixture.TC_IMP_03_AllZeroWeightsSkipped (3 ms)
+[----------] 1 test from SHealthBMITestFixture (3 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (3 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"SHealthBMITestFixture.TC_IMP_03_AllZeroWeightsSkipped" end time: May 20 11:36 대한민국 표준시
+"SHealthBMITestFixture.TC_IMP_03_AllZeroWeightsSkipped" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/52 Testing: SHealthBMITestFixture.TC_IMP_04_NoCrossBandImputation
+15/52 Test: SHealthBMITestFixture.TC_IMP_04_NoCrossBandImputation
+Command: "C:/DEV/SHealth_15/build-gcc/SHealthBMITest.exe" "--gtest_filter=SHealthBMITestFixture.TC_IMP_04_NoCrossBandImputation" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV/SHealth_15/build-gcc
+"SHealthBMITestFixture.TC_IMP_04_NoCrossBandImputation" start time: May 20 11:36 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV\SHealth_15\build-gcc\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = SHealthBMITestFixture.TC_IMP_04_NoCrossBandImputation
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SHealthBMITestFixture
+[ RUN      ] SHealthBMITestFixture.TC_IMP_04_NoCrossBandImputation
+[       OK ] SHealthBMITestFixture.TC_IMP_04_NoCrossBandImputation (3 ms)
+[----------] 1 test from SHealthBMITestFixture (3 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (3 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"SHealthBMITestFixture.TC_IMP_04_NoCrossBandImputation" end time: May 20 11:36 대한민국 표준시
+"SHealthBMITestFixture.TC_IMP_04_NoCrossBandImputation" time elapsed: 00:00:00
+----------------------------------------------------------
+
+16/52 Testing: SHealthBMITestFixture.TC_IMP_05_BoundaryNormalVsOverweight
+16/52 Test: SHealthBMITestFixture.TC_IMP_05_BoundaryNormalVsOverweight
+Command: "C:/DEV/SHealth_15/build-gcc/SHealthBMITest.exe" "--gtest_filter=SHealthBMITestFixture.TC_IMP_05_BoundaryNormalVsOverweight" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV/SHealth_15/build-gcc
+"SHealthBMITestFixture.TC_IMP_05_BoundaryNormalVsOverweight" start time: May 20 11:36 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV\SHealth_15\build-gcc\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = SHealthBMITestFixture.TC_IMP_05_BoundaryNormalVsOverweight
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SHealthBMITestFixture
+[ RUN      ] SHealthBMITestFixture.TC_IMP_05_BoundaryNormalVsOverweight
+[       OK ] SHealthBMITestFixture.TC_IMP_05_BoundaryNormalVsOverweight (2 ms)
+[----------] 1 test from SHealthBMITestFixture (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (3 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"SHealthBMITestFixture.TC_IMP_05_BoundaryNormalVsOverweight" end time: May 20 11:36 대한민국 표준시
+"SHealthBMITestFixture.TC_IMP_05_BoundaryNormalVsOverweight" time elapsed: 00:00:00
+----------------------------------------------------------
+
+17/52 Testing: SHealthBMITestFixture.TC_CLS_08_FourCategoriesQuarterEach
+17/52 Test: SHealthBMITestFixture.TC_CLS_08_FourCategoriesQuarterEach
+Command: "C:/DEV/SHealth_15/build-gcc/SHealthBMITest.exe" "--gtest_filter=SHealthBMITestFixture.TC_CLS_08_FourCategoriesQuarterEach" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV/SHealth_15/build-gcc
+"SHealthBMITestFixture.TC_CLS_08_FourCategoriesQuarterEach" start time: May 20 11:36 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV\SHealth_15\build-gcc\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = SHealthBMITestFixture.TC_CLS_08_FourCategoriesQuarterEach
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SHealthBMITestFixture
+[ RUN      ] SHealthBMITestFixture.TC_CLS_08_FourCategoriesQuarterEach
+[       OK ] SHealthBMITestFixture.TC_CLS_08_FourCategoriesQuarterEach (3 ms)
+[----------] 1 test from SHealthBMITestFixture (3 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (3 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"SHealthBMITestFixture.TC_CLS_08_FourCategoriesQuarterEach" end time: May 20 11:36 대한민국 표준시
+"SHealthBMITestFixture.TC_CLS_08_FourCategoriesQuarterEach" time elapsed: 00:00:00
+----------------------------------------------------------
+
+18/52 Testing: SHealthBMITestFixture.TC_AGE_01_Age19Excluded
+18/52 Test: SHealthBMITestFixture.TC_AGE_01_Age19Excluded
+Command: "C:/DEV/SHealth_15/build-gcc/SHealthBMITest.exe" "--gtest_filter=SHealthBMITestFixture.TC_AGE_01_Age19Excluded" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV/SHealth_15/build-gcc
+"SHealthBMITestFixture.TC_AGE_01_Age19Excluded" start time: May 20 11:36 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV\SHealth_15\build-gcc\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = SHealthBMITestFixture.TC_AGE_01_Age19Excluded
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SHealthBMITestFixture
+[ RUN      ] SHealthBMITestFixture.TC_AGE_01_Age19Excluded
+[       OK ] SHealthBMITestFixture.TC_AGE_01_Age19Excluded (3 ms)
+[----------] 1 test from SHealthBMITestFixture (3 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (3 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"SHealthBMITestFixture.TC_AGE_01_Age19Excluded" end time: May 20 11:36 대한민국 표준시
+"SHealthBMITestFixture.TC_AGE_01_Age19Excluded" time elapsed: 00:00:00
+----------------------------------------------------------
+
+19/52 Testing: SHealthBMITestFixture.TC_AGE_02_Age20Included
+19/52 Test: SHealthBMITestFixture.TC_AGE_02_Age20Included
+Command: "C:/DEV/SHealth_15/build-gcc/SHealthBMITest.exe" "--gtest_filter=SHealthBMITestFixture.TC_AGE_02_Age20Included" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV/SHealth_15/build-gcc
+"SHealthBMITestFixture.TC_AGE_02_Age20Included" start time: May 20 11:36 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV\SHealth_15\build-gcc\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = SHealthBMITestFixture.TC_AGE_02_Age20Included
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SHealthBMITestFixture
+[ RUN      ] SHealthBMITestFixture.TC_AGE_02_Age20Included
+[       OK ] SHealthBMITestFixture.TC_AGE_02_Age20Included (3 ms)
+[----------] 1 test from SHealthBMITestFixture (3 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (3 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"SHealthBMITestFixture.TC_AGE_02_Age20Included" end time: May 20 11:36 대한민국 표준시
+"SHealthBMITestFixture.TC_AGE_02_Age20Included" time elapsed: 00:00:00
+----------------------------------------------------------
+
+20/52 Testing: SHealthBMITestFixture.TC_AGE_03_Age29Vs30
+20/52 Test: SHealthBMITestFixture.TC_AGE_03_Age29Vs30
+Command: "C:/DEV/SHealth_15/build-gcc/SHealthBMITest.exe" "--gtest_filter=SHealthBMITestFixture.TC_AGE_03_Age29Vs30" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV/SHealth_15/build-gcc
+"SHealthBMITestFixture.TC_AGE_03_Age29Vs30" start time: May 20 11:36 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV\SHealth_15\build-gcc\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = SHealthBMITestFixture.TC_AGE_03_Age29Vs30
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SHealthBMITestFixture
+[ RUN      ] SHealthBMITestFixture.TC_AGE_03_Age29Vs30
+[       OK ] SHealthBMITestFixture.TC_AGE_03_Age29Vs30 (4 ms)
+[----------] 1 test from SHealthBMITestFixture (4 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (4 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"SHealthBMITestFixture.TC_AGE_03_Age29Vs30" end time: May 20 11:36 대한민국 표준시
+"SHealthBMITestFixture.TC_AGE_03_Age29Vs30" time elapsed: 00:00:00
+----------------------------------------------------------
+
+21/52 Testing: SHealthBMITestFixture.TC_AGE_04_Age70Vs79
+21/52 Test: SHealthBMITestFixture.TC_AGE_04_Age70Vs79
+Command: "C:/DEV/SHealth_15/build-gcc/SHealthBMITest.exe" "--gtest_filter=SHealthBMITestFixture.TC_AGE_04_Age70Vs79" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV/SHealth_15/build-gcc
+"SHealthBMITestFixture.TC_AGE_04_Age70Vs79" start time: May 20 11:36 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV\SHealth_15\build-gcc\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = SHealthBMITestFixture.TC_AGE_04_Age70Vs79
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SHealthBMITestFixture
+[ RUN      ] SHealthBMITestFixture.TC_AGE_04_Age70Vs79
+[       OK ] SHealthBMITestFixture.TC_AGE_04_Age70Vs79 (3 ms)
+[----------] 1 test from SHealthBMITestFixture (3 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (3 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"SHealthBMITestFixture.TC_AGE_04_Age70Vs79" end time: May 20 11:36 대한민국 표준시
+"SHealthBMITestFixture.TC_AGE_04_Age70Vs79" time elapsed: 00:00:00
+----------------------------------------------------------
+
+22/52 Testing: SHealthBMITestFixture.TC_RAT_01_ValidAgeClassAndTypes
+22/52 Test: SHealthBMITestFixture.TC_RAT_01_ValidAgeClassAndTypes
+Command: "C:/DEV/SHealth_15/build-gcc/SHealthBMITest.exe" "--gtest_filter=SHealthBMITestFixture.TC_RAT_01_ValidAgeClassAndTypes" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV/SHealth_15/build-gcc
+"SHealthBMITestFixture.TC_RAT_01_ValidAgeClassAndTypes" start time: May 20 11:36 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV\SHealth_15\build-gcc\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = SHealthBMITestFixture.TC_RAT_01_ValidAgeClassAndTypes
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SHealthBMITestFixture
+[ RUN      ] SHealthBMITestFixture.TC_RAT_01_ValidAgeClassAndTypes
+[       OK ] SHealthBMITestFixture.TC_RAT_01_ValidAgeClassAndTypes (3 ms)
+[----------] 1 test from SHealthBMITestFixture (3 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (4 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"SHealthBMITestFixture.TC_RAT_01_ValidAgeClassAndTypes" end time: May 20 11:36 대한민국 표준시
+"SHealthBMITestFixture.TC_RAT_01_ValidAgeClassAndTypes" time elapsed: 00:00:00
+----------------------------------------------------------
+
+23/52 Testing: SHealthBMITestFixture.TC_RAT_02_InvalidAgeClass
+23/52 Test: SHealthBMITestFixture.TC_RAT_02_InvalidAgeClass
+Command: "C:/DEV/SHealth_15/build-gcc/SHealthBMITest.exe" "--gtest_filter=SHealthBMITestFixture.TC_RAT_02_InvalidAgeClass" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV/SHealth_15/build-gcc
+"SHealthBMITestFixture.TC_RAT_02_InvalidAgeClass" start time: May 20 11:36 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV\SHealth_15\build-gcc\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = SHealthBMITestFixture.TC_RAT_02_InvalidAgeClass
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SHealthBMITestFixture
+[ RUN      ] SHealthBMITestFixture.TC_RAT_02_InvalidAgeClass
+[       OK ] SHealthBMITestFixture.TC_RAT_02_InvalidAgeClass (3 ms)
+[----------] 1 test from SHealthBMITestFixture (3 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (4 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"SHealthBMITestFixture.TC_RAT_02_InvalidAgeClass" end time: May 20 11:36 대한민국 표준시
+"SHealthBMITestFixture.TC_RAT_02_InvalidAgeClass" time elapsed: 00:00:00
+----------------------------------------------------------
+
+24/52 Testing: SHealthBMITestFixture.TC_RAT_03_InvalidType
+24/52 Test: SHealthBMITestFixture.TC_RAT_03_InvalidType
+Command: "C:/DEV/SHealth_15/build-gcc/SHealthBMITest.exe" "--gtest_filter=SHealthBMITestFixture.TC_RAT_03_InvalidType" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV/SHealth_15/build-gcc
+"SHealthBMITestFixture.TC_RAT_03_InvalidType" start time: May 20 11:36 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV\SHealth_15\build-gcc\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = SHealthBMITestFixture.TC_RAT_03_InvalidType
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SHealthBMITestFixture
+[ RUN      ] SHealthBMITestFixture.TC_RAT_03_InvalidType
+[       OK ] SHealthBMITestFixture.TC_RAT_03_InvalidType (3 ms)
+[----------] 1 test from SHealthBMITestFixture (3 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (3 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"SHealthBMITestFixture.TC_RAT_03_InvalidType" end time: May 20 11:36 대한민국 표준시
+"SHealthBMITestFixture.TC_RAT_03_InvalidType" time elapsed: 00:00:00
+----------------------------------------------------------
+
+25/52 Testing: SHealthBMITestFixture.TC_RAT_04_NoPriorCalculateBmi
+25/52 Test: SHealthBMITestFixture.TC_RAT_04_NoPriorCalculateBmi
+Command: "C:/DEV/SHealth_15/build-gcc/SHealthBMITest.exe" "--gtest_filter=SHealthBMITestFixture.TC_RAT_04_NoPriorCalculateBmi" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV/SHealth_15/build-gcc
+"SHealthBMITestFixture.TC_RAT_04_NoPriorCalculateBmi" start time: May 20 11:36 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV\SHealth_15\build-gcc\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = SHealthBMITestFixture.TC_RAT_04_NoPriorCalculateBmi
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SHealthBMITestFixture
+[ RUN      ] SHealthBMITestFixture.TC_RAT_04_NoPriorCalculateBmi
+[       OK ] SHealthBMITestFixture.TC_RAT_04_NoPriorCalculateBmi (1 ms)
+[----------] 1 test from SHealthBMITestFixture (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"SHealthBMITestFixture.TC_RAT_04_NoPriorCalculateBmi" end time: May 20 11:36 대한민국 표준시
+"SHealthBMITestFixture.TC_RAT_04_NoPriorCalculateBmi" time elapsed: 00:00:00
+----------------------------------------------------------
+
+26/52 Testing: SHealthBMITestFixture.TC_RAT_05_EmptyAgeBand
+26/52 Test: SHealthBMITestFixture.TC_RAT_05_EmptyAgeBand
+Command: "C:/DEV/SHealth_15/build-gcc/SHealthBMITest.exe" "--gtest_filter=SHealthBMITestFixture.TC_RAT_05_EmptyAgeBand" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV/SHealth_15/build-gcc
+"SHealthBMITestFixture.TC_RAT_05_EmptyAgeBand" start time: May 20 11:36 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV\SHealth_15\build-gcc\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = SHealthBMITestFixture.TC_RAT_05_EmptyAgeBand
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SHealthBMITestFixture
+[ RUN      ] SHealthBMITestFixture.TC_RAT_05_EmptyAgeBand
+[       OK ] SHealthBMITestFixture.TC_RAT_05_EmptyAgeBand (5 ms)
+[----------] 1 test from SHealthBMITestFixture (5 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (5 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"SHealthBMITestFixture.TC_RAT_05_EmptyAgeBand" end time: May 20 11:36 대한민국 표준시
+"SHealthBMITestFixture.TC_RAT_05_EmptyAgeBand" time elapsed: 00:00:00
+----------------------------------------------------------
+
+27/52 Testing: SHealthBMITestFixture.TC_EXC_01_FileNotFound
+27/52 Test: SHealthBMITestFixture.TC_EXC_01_FileNotFound
+Command: "C:/DEV/SHealth_15/build-gcc/SHealthBMITest.exe" "--gtest_filter=SHealthBMITestFixture.TC_EXC_01_FileNotFound" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV/SHealth_15/build-gcc
+"SHealthBMITestFixture.TC_EXC_01_FileNotFound" start time: May 20 11:36 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV\SHealth_15\build-gcc\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = SHealthBMITestFixture.TC_EXC_01_FileNotFound
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SHealthBMITestFixture
+[ RUN      ] SHealthBMITestFixture.TC_EXC_01_FileNotFound
+Failed to open file: C:\Users\SHHAN~1\AppData\Local\Temp\shealth_bmi_test\nonexistent_file.dat
+[       OK ] SHealthBMITestFixture.TC_EXC_01_FileNotFound (1 ms)
+[----------] 1 test from SHealthBMITestFixture (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"SHealthBMITestFixture.TC_EXC_01_FileNotFound" end time: May 20 11:36 대한민국 표준시
+"SHealthBMITestFixture.TC_EXC_01_FileNotFound" time elapsed: 00:00:00
+----------------------------------------------------------
+
+28/52 Testing: SHealthBMITestFixture.TC_EXC_02_EmptyFile
+28/52 Test: SHealthBMITestFixture.TC_EXC_02_EmptyFile
+Command: "C:/DEV/SHealth_15/build-gcc/SHealthBMITest.exe" "--gtest_filter=SHealthBMITestFixture.TC_EXC_02_EmptyFile" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV/SHealth_15/build-gcc
+"SHealthBMITestFixture.TC_EXC_02_EmptyFile" start time: May 20 11:36 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV\SHealth_15\build-gcc\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = SHealthBMITestFixture.TC_EXC_02_EmptyFile
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SHealthBMITestFixture
+[ RUN      ] SHealthBMITestFixture.TC_EXC_02_EmptyFile
+[       OK ] SHealthBMITestFixture.TC_EXC_02_EmptyFile (2 ms)
+[----------] 1 test from SHealthBMITestFixture (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (2 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"SHealthBMITestFixture.TC_EXC_02_EmptyFile" end time: May 20 11:36 대한민국 표준시
+"SHealthBMITestFixture.TC_EXC_02_EmptyFile" time elapsed: 00:00:00
+----------------------------------------------------------
+
+29/52 Testing: SHealthBMITestFixture.TC_EXC_03_HeaderOnly
+29/52 Test: SHealthBMITestFixture.TC_EXC_03_HeaderOnly
+Command: "C:/DEV/SHealth_15/build-gcc/SHealthBMITest.exe" "--gtest_filter=SHealthBMITestFixture.TC_EXC_03_HeaderOnly" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV/SHealth_15/build-gcc
+"SHealthBMITestFixture.TC_EXC_03_HeaderOnly" start time: May 20 11:36 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV\SHealth_15\build-gcc\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = SHealthBMITestFixture.TC_EXC_03_HeaderOnly
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SHealthBMITestFixture
+[ RUN      ] SHealthBMITestFixture.TC_EXC_03_HeaderOnly
+[       OK ] SHealthBMITestFixture.TC_EXC_03_HeaderOnly (3 ms)
+[----------] 1 test from SHealthBMITestFixture (3 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (3 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"SHealthBMITestFixture.TC_EXC_03_HeaderOnly" end time: May 20 11:36 대한민국 표준시
+"SHealthBMITestFixture.TC_EXC_03_HeaderOnly" time elapsed: 00:00:00
+----------------------------------------------------------
+
+30/52 Testing: SHealthBMITestFixture.TC_EXC_04_HeaderWithTrailingNewline
+30/52 Test: SHealthBMITestFixture.TC_EXC_04_HeaderWithTrailingNewline
+Command: "C:/DEV/SHealth_15/build-gcc/SHealthBMITest.exe" "--gtest_filter=SHealthBMITestFixture.TC_EXC_04_HeaderWithTrailingNewline" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV/SHealth_15/build-gcc
+"SHealthBMITestFixture.TC_EXC_04_HeaderWithTrailingNewline" start time: May 20 11:36 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV\SHealth_15\build-gcc\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = SHealthBMITestFixture.TC_EXC_04_HeaderWithTrailingNewline
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SHealthBMITestFixture
+[ RUN      ] SHealthBMITestFixture.TC_EXC_04_HeaderWithTrailingNewline
+[       OK ] SHealthBMITestFixture.TC_EXC_04_HeaderWithTrailingNewline (3 ms)
+[----------] 1 test from SHealthBMITestFixture (3 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (3 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"SHealthBMITestFixture.TC_EXC_04_HeaderWithTrailingNewline" end time: May 20 11:36 대한민국 표준시
+"SHealthBMITestFixture.TC_EXC_04_HeaderWithTrailingNewline" time elapsed: 00:00:00
+----------------------------------------------------------
+
+31/52 Testing: SHealthBMITestFixture.TC_EXC_05_MalformedCsvTooFewColumns
+31/52 Test: SHealthBMITestFixture.TC_EXC_05_MalformedCsvTooFewColumns
+Command: "C:/DEV/SHealth_15/build-gcc/SHealthBMITest.exe" "--gtest_filter=SHealthBMITestFixture.TC_EXC_05_MalformedCsvTooFewColumns" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV/SHealth_15/build-gcc
+"SHealthBMITestFixture.TC_EXC_05_MalformedCsvTooFewColumns" start time: May 20 11:36 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV\SHealth_15\build-gcc\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = SHealthBMITestFixture.TC_EXC_05_MalformedCsvTooFewColumns
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SHealthBMITestFixture
+[ RUN      ] SHealthBMITestFixture.TC_EXC_05_MalformedCsvTooFewColumns
+Skipping malformed line (too few columns): 1,25,70
+[       OK ] SHealthBMITestFixture.TC_EXC_05_MalformedCsvTooFewColumns (4 ms)
+[----------] 1 test from SHealthBMITestFixture (4 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (4 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"SHealthBMITestFixture.TC_EXC_05_MalformedCsvTooFewColumns" end time: May 20 11:36 대한민국 표준시
+"SHealthBMITestFixture.TC_EXC_05_MalformedCsvTooFewColumns" time elapsed: 00:00:00
+----------------------------------------------------------
+
+32/52 Testing: SHealthBMITestFixture.TC_EXC_06_MalformedCsvNonNumericAge
+32/52 Test: SHealthBMITestFixture.TC_EXC_06_MalformedCsvNonNumericAge
+Command: "C:/DEV/SHealth_15/build-gcc/SHealthBMITest.exe" "--gtest_filter=SHealthBMITestFixture.TC_EXC_06_MalformedCsvNonNumericAge" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV/SHealth_15/build-gcc
+"SHealthBMITestFixture.TC_EXC_06_MalformedCsvNonNumericAge" start time: May 20 11:36 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV\SHealth_15\build-gcc\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = SHealthBMITestFixture.TC_EXC_06_MalformedCsvNonNumericAge
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SHealthBMITestFixture
+[ RUN      ] SHealthBMITestFixture.TC_EXC_06_MalformedCsvNonNumericAge
+Skipping line with invalid numeric field: 1,abc,70,170 (stoi)
+[       OK ] SHealthBMITestFixture.TC_EXC_06_MalformedCsvNonNumericAge (3 ms)
+[----------] 1 test from SHealthBMITestFixture (3 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (3 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"SHealthBMITestFixture.TC_EXC_06_MalformedCsvNonNumericAge" end time: May 20 11:36 대한민국 표준시
+"SHealthBMITestFixture.TC_EXC_06_MalformedCsvNonNumericAge" time elapsed: 00:00:00
+----------------------------------------------------------
+
+33/52 Testing: SHealthBMITestFixture.TC_EXC_11_MalformedCsvSkipsBadRowLoadsValid
+33/52 Test: SHealthBMITestFixture.TC_EXC_11_MalformedCsvSkipsBadRowLoadsValid
+Command: "C:/DEV/SHealth_15/build-gcc/SHealthBMITest.exe" "--gtest_filter=SHealthBMITestFixture.TC_EXC_11_MalformedCsvSkipsBadRowLoadsValid" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV/SHealth_15/build-gcc
+"SHealthBMITestFixture.TC_EXC_11_MalformedCsvSkipsBadRowLoadsValid" start time: May 20 11:36 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV\SHealth_15\build-gcc\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = SHealthBMITestFixture.TC_EXC_11_MalformedCsvSkipsBadRowLoadsValid
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SHealthBMITestFixture
+[ RUN      ] SHealthBMITestFixture.TC_EXC_11_MalformedCsvSkipsBadRowLoadsValid
+Skipping line with invalid numeric field: 1,abc,70,170 (stoi)
+[       OK ] SHealthBMITestFixture.TC_EXC_11_MalformedCsvSkipsBadRowLoadsValid (5 ms)
+[----------] 1 test from SHealthBMITestFixture (5 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (5 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"SHealthBMITestFixture.TC_EXC_11_MalformedCsvSkipsBadRowLoadsValid" end time: May 20 11:36 대한민국 표준시
+"SHealthBMITestFixture.TC_EXC_11_MalformedCsvSkipsBadRowLoadsValid" time elapsed: 00:00:00
+----------------------------------------------------------
+
+34/52 Testing: SHealthBMITestFixture.TC_EXC_07_BlankLineStopsLoading
+34/52 Test: SHealthBMITestFixture.TC_EXC_07_BlankLineStopsLoading
+Command: "C:/DEV/SHealth_15/build-gcc/SHealthBMITest.exe" "--gtest_filter=SHealthBMITestFixture.TC_EXC_07_BlankLineStopsLoading" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV/SHealth_15/build-gcc
+"SHealthBMITestFixture.TC_EXC_07_BlankLineStopsLoading" start time: May 20 11:36 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV\SHealth_15\build-gcc\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = SHealthBMITestFixture.TC_EXC_07_BlankLineStopsLoading
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SHealthBMITestFixture
+[ RUN      ] SHealthBMITestFixture.TC_EXC_07_BlankLineStopsLoading
+[       OK ] SHealthBMITestFixture.TC_EXC_07_BlankLineStopsLoading (3 ms)
+[----------] 1 test from SHealthBMITestFixture (4 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (4 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"SHealthBMITestFixture.TC_EXC_07_BlankLineStopsLoading" end time: May 20 11:36 대한민국 표준시
+"SHealthBMITestFixture.TC_EXC_07_BlankLineStopsLoading" time elapsed: 00:00:00
+----------------------------------------------------------
+
+35/52 Testing: SHealthBMITestFixture.TC_EXC_08_InvalidGetBmiRatioArgs
+35/52 Test: SHealthBMITestFixture.TC_EXC_08_InvalidGetBmiRatioArgs
+Command: "C:/DEV/SHealth_15/build-gcc/SHealthBMITest.exe" "--gtest_filter=SHealthBMITestFixture.TC_EXC_08_InvalidGetBmiRatioArgs" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV/SHealth_15/build-gcc
+"SHealthBMITestFixture.TC_EXC_08_InvalidGetBmiRatioArgs" start time: May 20 11:36 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV\SHealth_15\build-gcc\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = SHealthBMITestFixture.TC_EXC_08_InvalidGetBmiRatioArgs
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SHealthBMITestFixture
+[ RUN      ] SHealthBMITestFixture.TC_EXC_08_InvalidGetBmiRatioArgs
+[       OK ] SHealthBMITestFixture.TC_EXC_08_InvalidGetBmiRatioArgs (4 ms)
+[----------] 1 test from SHealthBMITestFixture (4 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (4 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"SHealthBMITestFixture.TC_EXC_08_InvalidGetBmiRatioArgs" end time: May 20 11:36 대한민국 표준시
+"SHealthBMITestFixture.TC_EXC_08_InvalidGetBmiRatioArgs" time elapsed: 00:00:00
+----------------------------------------------------------
+
+36/52 Testing: SHealthBMITestFixture.TC_EXC_09_EmptyPath
+36/52 Test: SHealthBMITestFixture.TC_EXC_09_EmptyPath
+Command: "C:/DEV/SHealth_15/build-gcc/SHealthBMITest.exe" "--gtest_filter=SHealthBMITestFixture.TC_EXC_09_EmptyPath" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV/SHealth_15/build-gcc
+"SHealthBMITestFixture.TC_EXC_09_EmptyPath" start time: May 20 11:36 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV\SHealth_15\build-gcc\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = SHealthBMITestFixture.TC_EXC_09_EmptyPath
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SHealthBMITestFixture
+[ RUN      ] SHealthBMITestFixture.TC_EXC_09_EmptyPath
+Failed to open file: 
+[       OK ] SHealthBMITestFixture.TC_EXC_09_EmptyPath (0 ms)
+[----------] 1 test from SHealthBMITestFixture (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"SHealthBMITestFixture.TC_EXC_09_EmptyPath" end time: May 20 11:36 대한민국 표준시
+"SHealthBMITestFixture.TC_EXC_09_EmptyPath" time elapsed: 00:00:00
+----------------------------------------------------------
+
+37/52 Testing: SHealthBMITestFixture.TC_EXC_10_CheckinFixtureRelativePath
+37/52 Test: SHealthBMITestFixture.TC_EXC_10_CheckinFixtureRelativePath
+Command: "C:/DEV/SHealth_15/build-gcc/SHealthBMITest.exe" "--gtest_filter=SHealthBMITestFixture.TC_EXC_10_CheckinFixtureRelativePath" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV/SHealth_15/build-gcc
+"SHealthBMITestFixture.TC_EXC_10_CheckinFixtureRelativePath" start time: May 20 11:36 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV\SHealth_15\build-gcc\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = SHealthBMITestFixture.TC_EXC_10_CheckinFixtureRelativePath
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SHealthBMITestFixture
+[ RUN      ] SHealthBMITestFixture.TC_EXC_10_CheckinFixtureRelativePath
+[       OK ] SHealthBMITestFixture.TC_EXC_10_CheckinFixtureRelativePath (1 ms)
+[----------] 1 test from SHealthBMITestFixture (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"SHealthBMITestFixture.TC_EXC_10_CheckinFixtureRelativePath" end time: May 20 11:36 대한민국 표준시
+"SHealthBMITestFixture.TC_EXC_10_CheckinFixtureRelativePath" time elapsed: 00:00:00
+----------------------------------------------------------
+
+38/52 Testing: SHealthBMITestFixture.TC_HGT_10_ThirtyBandAverageHeightImputation
+38/52 Test: SHealthBMITestFixture.TC_HGT_10_ThirtyBandAverageHeightImputation
+Command: "C:/DEV/SHealth_15/build-gcc/SHealthBMITest.exe" "--gtest_filter=SHealthBMITestFixture.TC_HGT_10_ThirtyBandAverageHeightImputation" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV/SHealth_15/build-gcc
+"SHealthBMITestFixture.TC_HGT_10_ThirtyBandAverageHeightImputation" start time: May 20 11:36 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV\SHealth_15\build-gcc\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = SHealthBMITestFixture.TC_HGT_10_ThirtyBandAverageHeightImputation
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SHealthBMITestFixture
+[ RUN      ] SHealthBMITestFixture.TC_HGT_10_ThirtyBandAverageHeightImputation
+[       OK ] SHealthBMITestFixture.TC_HGT_10_ThirtyBandAverageHeightImputation (3 ms)
+[----------] 1 test from SHealthBMITestFixture (3 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (3 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"SHealthBMITestFixture.TC_HGT_10_ThirtyBandAverageHeightImputation" end time: May 20 11:36 대한민국 표준시
+"SHealthBMITestFixture.TC_HGT_10_ThirtyBandAverageHeightImputation" time elapsed: 00:00:00
+----------------------------------------------------------
+
+39/52 Testing: SHealthBMITestFixture.TC_HGT_11_FortyBandAllZeroHeightsSkipped
+39/52 Test: SHealthBMITestFixture.TC_HGT_11_FortyBandAllZeroHeightsSkipped
+Command: "C:/DEV/SHealth_15/build-gcc/SHealthBMITest.exe" "--gtest_filter=SHealthBMITestFixture.TC_HGT_11_FortyBandAllZeroHeightsSkipped" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV/SHealth_15/build-gcc
+"SHealthBMITestFixture.TC_HGT_11_FortyBandAllZeroHeightsSkipped" start time: May 20 11:36 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV\SHealth_15\build-gcc\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = SHealthBMITestFixture.TC_HGT_11_FortyBandAllZeroHeightsSkipped
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SHealthBMITestFixture
+[ RUN      ] SHealthBMITestFixture.TC_HGT_11_FortyBandAllZeroHeightsSkipped
+[       OK ] SHealthBMITestFixture.TC_HGT_11_FortyBandAllZeroHeightsSkipped (4 ms)
+[----------] 1 test from SHealthBMITestFixture (4 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (4 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"SHealthBMITestFixture.TC_HGT_11_FortyBandAllZeroHeightsSkipped" end time: May 20 11:36 대한민국 표준시
+"SHealthBMITestFixture.TC_HGT_11_FortyBandAllZeroHeightsSkipped" time elapsed: 00:00:00
+----------------------------------------------------------
+
+40/52 Testing: SHealthBMITestFixture.TC_HGT_01_HeightZeroWeightPositive
+40/52 Test: SHealthBMITestFixture.TC_HGT_01_HeightZeroWeightPositive
+Command: "C:/DEV/SHealth_15/build-gcc/SHealthBMITest.exe" "--gtest_filter=SHealthBMITestFixture.TC_HGT_01_HeightZeroWeightPositive" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV/SHealth_15/build-gcc
+"SHealthBMITestFixture.TC_HGT_01_HeightZeroWeightPositive" start time: May 20 11:36 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV\SHealth_15\build-gcc\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = SHealthBMITestFixture.TC_HGT_01_HeightZeroWeightPositive
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SHealthBMITestFixture
+[ RUN      ] SHealthBMITestFixture.TC_HGT_01_HeightZeroWeightPositive
+[       OK ] SHealthBMITestFixture.TC_HGT_01_HeightZeroWeightPositive (3 ms)
+[----------] 1 test from SHealthBMITestFixture (3 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (3 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"SHealthBMITestFixture.TC_HGT_01_HeightZeroWeightPositive" end time: May 20 11:36 대한민국 표준시
+"SHealthBMITestFixture.TC_HGT_01_HeightZeroWeightPositive" time elapsed: 00:00:00
+----------------------------------------------------------
+
+41/52 Testing: SHealthBMITestFixture.TC_HGT_02_HeightZeroWeightZero
+41/52 Test: SHealthBMITestFixture.TC_HGT_02_HeightZeroWeightZero
+Command: "C:/DEV/SHealth_15/build-gcc/SHealthBMITest.exe" "--gtest_filter=SHealthBMITestFixture.TC_HGT_02_HeightZeroWeightZero" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV/SHealth_15/build-gcc
+"SHealthBMITestFixture.TC_HGT_02_HeightZeroWeightZero" start time: May 20 11:36 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV\SHealth_15\build-gcc\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = SHealthBMITestFixture.TC_HGT_02_HeightZeroWeightZero
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SHealthBMITestFixture
+[ RUN      ] SHealthBMITestFixture.TC_HGT_02_HeightZeroWeightZero
+[       OK ] SHealthBMITestFixture.TC_HGT_02_HeightZeroWeightZero (3 ms)
+[----------] 1 test from SHealthBMITestFixture (4 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (4 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"SHealthBMITestFixture.TC_HGT_02_HeightZeroWeightZero" end time: May 20 11:36 대한민국 표준시
+"SHealthBMITestFixture.TC_HGT_02_HeightZeroWeightZero" time elapsed: 00:00:00
+----------------------------------------------------------
+
+42/52 Testing: SHealthBMITestFixture.TC_API_01_GetAgeBandRatiosMatchesLegacyGetBmiRatio
+42/52 Test: SHealthBMITestFixture.TC_API_01_GetAgeBandRatiosMatchesLegacyGetBmiRatio
+Command: "C:/DEV/SHealth_15/build-gcc/SHealthBMITest.exe" "--gtest_filter=SHealthBMITestFixture.TC_API_01_GetAgeBandRatiosMatchesLegacyGetBmiRatio" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV/SHealth_15/build-gcc
+"SHealthBMITestFixture.TC_API_01_GetAgeBandRatiosMatchesLegacyGetBmiRatio" start time: May 20 11:36 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV\SHealth_15\build-gcc\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = SHealthBMITestFixture.TC_API_01_GetAgeBandRatiosMatchesLegacyGetBmiRatio
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SHealthBMITestFixture
+[ RUN      ] SHealthBMITestFixture.TC_API_01_GetAgeBandRatiosMatchesLegacyGetBmiRatio
+[       OK ] SHealthBMITestFixture.TC_API_01_GetAgeBandRatiosMatchesLegacyGetBmiRatio (3 ms)
+[----------] 1 test from SHealthBMITestFixture (3 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (3 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"SHealthBMITestFixture.TC_API_01_GetAgeBandRatiosMatchesLegacyGetBmiRatio" end time: May 20 11:36 대한민국 표준시
+"SHealthBMITestFixture.TC_API_01_GetAgeBandRatiosMatchesLegacyGetBmiRatio" time elapsed: 00:00:00
+----------------------------------------------------------
+
+43/52 Testing: SHealthBMITestFixture.TC_API_02_SixByFourMatrixSnapshotOnRealData
+43/52 Test: SHealthBMITestFixture.TC_API_02_SixByFourMatrixSnapshotOnRealData
+Command: "C:/DEV/SHealth_15/build-gcc/SHealthBMITest.exe" "--gtest_filter=SHealthBMITestFixture.TC_API_02_SixByFourMatrixSnapshotOnRealData" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV/SHealth_15/build-gcc
+"SHealthBMITestFixture.TC_API_02_SixByFourMatrixSnapshotOnRealData" start time: May 20 11:36 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV\SHealth_15\build-gcc\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = SHealthBMITestFixture.TC_API_02_SixByFourMatrixSnapshotOnRealData
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SHealthBMITestFixture
+[ RUN      ] SHealthBMITestFixture.TC_API_02_SixByFourMatrixSnapshotOnRealData
+[       OK ] SHealthBMITestFixture.TC_API_02_SixByFourMatrixSnapshotOnRealData (12 ms)
+[----------] 1 test from SHealthBMITestFixture (12 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (12 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"SHealthBMITestFixture.TC_API_02_SixByFourMatrixSnapshotOnRealData" end time: May 20 11:36 대한민국 표준시
+"SHealthBMITestFixture.TC_API_02_SixByFourMatrixSnapshotOnRealData" time elapsed: 00:00:00
+----------------------------------------------------------
+
+44/52 Testing: SHealthBMITestFixture.TC_API_03_InvalidAgeClassReturnsZeroRatios
+44/52 Test: SHealthBMITestFixture.TC_API_03_InvalidAgeClassReturnsZeroRatios
+Command: "C:/DEV/SHealth_15/build-gcc/SHealthBMITest.exe" "--gtest_filter=SHealthBMITestFixture.TC_API_03_InvalidAgeClassReturnsZeroRatios" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV/SHealth_15/build-gcc
+"SHealthBMITestFixture.TC_API_03_InvalidAgeClassReturnsZeroRatios" start time: May 20 11:36 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV\SHealth_15\build-gcc\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = SHealthBMITestFixture.TC_API_03_InvalidAgeClassReturnsZeroRatios
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SHealthBMITestFixture
+[ RUN      ] SHealthBMITestFixture.TC_API_03_InvalidAgeClassReturnsZeroRatios
+[       OK ] SHealthBMITestFixture.TC_API_03_InvalidAgeClassReturnsZeroRatios (4 ms)
+[----------] 1 test from SHealthBMITestFixture (4 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (4 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"SHealthBMITestFixture.TC_API_03_InvalidAgeClassReturnsZeroRatios" end time: May 20 11:36 대한민국 표준시
+"SHealthBMITestFixture.TC_API_03_InvalidAgeClassReturnsZeroRatios" time elapsed: 00:00:00
+----------------------------------------------------------
+
+45/52 Testing: SHealthBMITestFixture.TC_API_04_SingleBandFourCategoriesSumToOneHundred
+45/52 Test: SHealthBMITestFixture.TC_API_04_SingleBandFourCategoriesSumToOneHundred
+Command: "C:/DEV/SHealth_15/build-gcc/SHealthBMITest.exe" "--gtest_filter=SHealthBMITestFixture.TC_API_04_SingleBandFourCategoriesSumToOneHundred" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV/SHealth_15/build-gcc
+"SHealthBMITestFixture.TC_API_04_SingleBandFourCategoriesSumToOneHundred" start time: May 20 11:36 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV\SHealth_15\build-gcc\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = SHealthBMITestFixture.TC_API_04_SingleBandFourCategoriesSumToOneHundred
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SHealthBMITestFixture
+[ RUN      ] SHealthBMITestFixture.TC_API_04_SingleBandFourCategoriesSumToOneHundred
+[       OK ] SHealthBMITestFixture.TC_API_04_SingleBandFourCategoriesSumToOneHundred (3 ms)
+[----------] 1 test from SHealthBMITestFixture (3 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (3 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"SHealthBMITestFixture.TC_API_04_SingleBandFourCategoriesSumToOneHundred" end time: May 20 11:36 대한민국 표준시
+"SHealthBMITestFixture.TC_API_04_SingleBandFourCategoriesSumToOneHundred" time elapsed: 00:00:00
+----------------------------------------------------------
+
+46/52 Testing: SHealthBMITestFixture.TC_LST_01_ThreeUsersOnlyNormalIdListed
+46/52 Test: SHealthBMITestFixture.TC_LST_01_ThreeUsersOnlyNormalIdListed
+Command: "C:/DEV/SHealth_15/build-gcc/SHealthBMITest.exe" "--gtest_filter=SHealthBMITestFixture.TC_LST_01_ThreeUsersOnlyNormalIdListed" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV/SHealth_15/build-gcc
+"SHealthBMITestFixture.TC_LST_01_ThreeUsersOnlyNormalIdListed" start time: May 20 11:36 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV\SHealth_15\build-gcc\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = SHealthBMITestFixture.TC_LST_01_ThreeUsersOnlyNormalIdListed
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SHealthBMITestFixture
+[ RUN      ] SHealthBMITestFixture.TC_LST_01_ThreeUsersOnlyNormalIdListed
+[       OK ] SHealthBMITestFixture.TC_LST_01_ThreeUsersOnlyNormalIdListed (16 ms)
+[----------] 1 test from SHealthBMITestFixture (16 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (16 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"SHealthBMITestFixture.TC_LST_01_ThreeUsersOnlyNormalIdListed" end time: May 20 11:36 대한민국 표준시
+"SHealthBMITestFixture.TC_LST_01_ThreeUsersOnlyNormalIdListed" time elapsed: 00:00:00
+----------------------------------------------------------
+
+47/52 Testing: SHealthBMITestFixture.TC_LST_02_BoundaryBmi185And23Excluded
+47/52 Test: SHealthBMITestFixture.TC_LST_02_BoundaryBmi185And23Excluded
+Command: "C:/DEV/SHealth_15/build-gcc/SHealthBMITest.exe" "--gtest_filter=SHealthBMITestFixture.TC_LST_02_BoundaryBmi185And23Excluded" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV/SHealth_15/build-gcc
+"SHealthBMITestFixture.TC_LST_02_BoundaryBmi185And23Excluded" start time: May 20 11:36 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV\SHealth_15\build-gcc\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = SHealthBMITestFixture.TC_LST_02_BoundaryBmi185And23Excluded
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SHealthBMITestFixture
+[ RUN      ] SHealthBMITestFixture.TC_LST_02_BoundaryBmi185And23Excluded
+[       OK ] SHealthBMITestFixture.TC_LST_02_BoundaryBmi185And23Excluded (3 ms)
+[----------] 1 test from SHealthBMITestFixture (3 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (3 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"SHealthBMITestFixture.TC_LST_02_BoundaryBmi185And23Excluded" end time: May 20 11:36 대한민국 표준시
+"SHealthBMITestFixture.TC_LST_02_BoundaryBmi185And23Excluded" time elapsed: 00:00:00
+----------------------------------------------------------
+
+48/52 Testing: SHealthBMITestFixture.TC_LST_03_NoCalculateBmiReturnsEmptyList
+48/52 Test: SHealthBMITestFixture.TC_LST_03_NoCalculateBmiReturnsEmptyList
+Command: "C:/DEV/SHealth_15/build-gcc/SHealthBMITest.exe" "--gtest_filter=SHealthBMITestFixture.TC_LST_03_NoCalculateBmiReturnsEmptyList" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV/SHealth_15/build-gcc
+"SHealthBMITestFixture.TC_LST_03_NoCalculateBmiReturnsEmptyList" start time: May 20 11:36 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV\SHealth_15\build-gcc\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = SHealthBMITestFixture.TC_LST_03_NoCalculateBmiReturnsEmptyList
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SHealthBMITestFixture
+[ RUN      ] SHealthBMITestFixture.TC_LST_03_NoCalculateBmiReturnsEmptyList
+[       OK ] SHealthBMITestFixture.TC_LST_03_NoCalculateBmiReturnsEmptyList (0 ms)
+[----------] 1 test from SHealthBMITestFixture (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"SHealthBMITestFixture.TC_LST_03_NoCalculateBmiReturnsEmptyList" end time: May 20 11:36 대한민국 표준시
+"SHealthBMITestFixture.TC_LST_03_NoCalculateBmiReturnsEmptyList" time elapsed: 00:00:00
+----------------------------------------------------------
+
+49/52 Testing: SHealthBMITestFixture.TC_GLB_01_FourCategoriesSumToOneHundred
+49/52 Test: SHealthBMITestFixture.TC_GLB_01_FourCategoriesSumToOneHundred
+Command: "C:/DEV/SHealth_15/build-gcc/SHealthBMITest.exe" "--gtest_filter=SHealthBMITestFixture.TC_GLB_01_FourCategoriesSumToOneHundred" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV/SHealth_15/build-gcc
+"SHealthBMITestFixture.TC_GLB_01_FourCategoriesSumToOneHundred" start time: May 20 11:36 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV\SHealth_15\build-gcc\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = SHealthBMITestFixture.TC_GLB_01_FourCategoriesSumToOneHundred
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SHealthBMITestFixture
+[ RUN      ] SHealthBMITestFixture.TC_GLB_01_FourCategoriesSumToOneHundred
+[       OK ] SHealthBMITestFixture.TC_GLB_01_FourCategoriesSumToOneHundred (3 ms)
+[----------] 1 test from SHealthBMITestFixture (3 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (3 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"SHealthBMITestFixture.TC_GLB_01_FourCategoriesSumToOneHundred" end time: May 20 11:36 대한민국 표준시
+"SHealthBMITestFixture.TC_GLB_01_FourCategoriesSumToOneHundred" time elapsed: 00:00:00
+----------------------------------------------------------
+
+50/52 Testing: SHealthBMITestFixture.TC_GLB_02_GlobalIndependentOfAgeBandApi
+50/52 Test: SHealthBMITestFixture.TC_GLB_02_GlobalIndependentOfAgeBandApi
+Command: "C:/DEV/SHealth_15/build-gcc/SHealthBMITest.exe" "--gtest_filter=SHealthBMITestFixture.TC_GLB_02_GlobalIndependentOfAgeBandApi" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV/SHealth_15/build-gcc
+"SHealthBMITestFixture.TC_GLB_02_GlobalIndependentOfAgeBandApi" start time: May 20 11:36 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV\SHealth_15\build-gcc\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = SHealthBMITestFixture.TC_GLB_02_GlobalIndependentOfAgeBandApi
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SHealthBMITestFixture
+[ RUN      ] SHealthBMITestFixture.TC_GLB_02_GlobalIndependentOfAgeBandApi
+[       OK ] SHealthBMITestFixture.TC_GLB_02_GlobalIndependentOfAgeBandApi (3 ms)
+[----------] 1 test from SHealthBMITestFixture (3 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (3 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"SHealthBMITestFixture.TC_GLB_02_GlobalIndependentOfAgeBandApi" end time: May 20 11:36 대한민국 표준시
+"SHealthBMITestFixture.TC_GLB_02_GlobalIndependentOfAgeBandApi" time elapsed: 00:00:00
+----------------------------------------------------------
+
+51/52 Testing: SHealthBMITestFixture.TC_GLB_03_NoCalculateBmiReturnsZeroGlobalRatios
+51/52 Test: SHealthBMITestFixture.TC_GLB_03_NoCalculateBmiReturnsZeroGlobalRatios
+Command: "C:/DEV/SHealth_15/build-gcc/SHealthBMITest.exe" "--gtest_filter=SHealthBMITestFixture.TC_GLB_03_NoCalculateBmiReturnsZeroGlobalRatios" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV/SHealth_15/build-gcc
+"SHealthBMITestFixture.TC_GLB_03_NoCalculateBmiReturnsZeroGlobalRatios" start time: May 20 11:36 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV\SHealth_15\build-gcc\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = SHealthBMITestFixture.TC_GLB_03_NoCalculateBmiReturnsZeroGlobalRatios
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SHealthBMITestFixture
+[ RUN      ] SHealthBMITestFixture.TC_GLB_03_NoCalculateBmiReturnsZeroGlobalRatios
+[       OK ] SHealthBMITestFixture.TC_GLB_03_NoCalculateBmiReturnsZeroGlobalRatios (1 ms)
+[----------] 1 test from SHealthBMITestFixture (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"SHealthBMITestFixture.TC_GLB_03_NoCalculateBmiReturnsZeroGlobalRatios" end time: May 20 11:36 대한민국 표준시
+"SHealthBMITestFixture.TC_GLB_03_NoCalculateBmiReturnsZeroGlobalRatios" time elapsed: 00:00:00
+----------------------------------------------------------
+
+52/52 Testing: SHealthGoldenMaster.TC_GM_01_SHealthBMI_stdout_matches_baseline
+52/52 Test: SHealthGoldenMaster.TC_GM_01_SHealthBMI_stdout_matches_baseline
+Command: "C:/DEV/SHealth_15/build-gcc/SHealthGoldenTest.exe" "--gtest_filter=SHealthGoldenMaster.TC_GM_01_SHealthBMI_stdout_matches_baseline" "--gtest_also_run_disabled_tests"
+Directory: C:/DEV/SHealth_15/build-gcc
+"SHealthGoldenMaster.TC_GM_01_SHealthBMI_stdout_matches_baseline" start time: May 20 11:36 대한민국 표준시
+Output:
+----------------------------------------------------------
+Running main() from C:\DEV\SHealth_15\build-gcc\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = SHealthGoldenMaster.TC_GM_01_SHealthBMI_stdout_matches_baseline
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SHealthGoldenMaster
+[ RUN      ] SHealthGoldenMaster.TC_GM_01_SHealthBMI_stdout_matches_baseline
+[       OK ] SHealthGoldenMaster.TC_GM_01_SHealthBMI_stdout_matches_baseline (48 ms)
+[----------] 1 test from SHealthGoldenMaster (48 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (48 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"SHealthGoldenMaster.TC_GM_01_SHealthBMI_stdout_matches_baseline" end time: May 20 11:36 대한민국 표준시
+"SHealthGoldenMaster.TC_GM_01_SHealthBMI_stdout_matches_baseline" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: May 20 11:36 대한민국 표준시
