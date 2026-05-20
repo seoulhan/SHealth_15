@@ -2,7 +2,7 @@
 
 | 항목 | 내용 |
 |------|------|
-| 문서 버전 | 1.0 |
+| 문서 버전 | 1.1 |
 | 작성일 | 2026-05-20 |
 | Step | 09 — Golden Master 자동화 |
 | commit string (권장) | `09_Golden_Master_자동화` |
@@ -42,6 +42,8 @@
 - `printf` `%f` 기본 정밀도(**소수 6자리**)
 
 **실행 조건:** 작업 디렉터리(CWD)에 `shealth.dat`가 있어야 한다. Golden 테스트는 **저장소 루트**(`shealth.dat` 부모)를 CWD로 두고 `SHealthBMI`를 실행한다.
+
+**Golden 비대상 (Step 15+, Step 17 확인):** `SHealthPresenter`가 6행 뒤에 출력하는 FR-C01 정상 ID 목록·FR-C02 Global 4분류는 baseline·`TC_GM_01` 비교에 **포함하지 않음**. `SHealthGoldenTest`는 앞 **6행만** 파싱한다. 데모 stdout 회귀는 `TC-LST-*`·`TC-GLB-*`로 검증 (`docs/feature_regression_report.md` §4.2).
 
 ---
 
@@ -167,3 +169,4 @@ ctest -R SHealthGoldenMaster -V
 | 버전 | 일자 | 변경 |
 |------|------|------|
 | 1.0 | 2026-05-20 | Step 09 — baseline·GTest·ctest·갱신 절차 최초 작성 |
+| 1.1 | 2026-05-20 | Step 17 — FR-C01/C02 데모 출력 Golden 비대상·6행만 비교 명시 |

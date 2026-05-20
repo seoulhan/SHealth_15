@@ -24,6 +24,8 @@ CMakeFiles/SHealthBMITest.dir/src/test/cpp/SHealthBMITest.cpp.obj: C:/DEV/SHealt
   _deps/googletest-src/googletest/include/gtest/internal/gtest-string.h \
   _deps/googletest-src/googletest/include/gtest/internal/gtest-type-util.h \
   C:/DEV/SHealth_15/src/main/cpp/SHealth.h \
+  C:/DEV/SHealth_15/src/main/cpp/SHealthDomain.h \
+  C:/DEV/SHealth_15/src/main/cpp/SHealthTypes.h \
   C:/mingw64/include/c++/15.2.0/any \
   C:/mingw64/include/c++/15.2.0/array \
   C:/mingw64/include/c++/15.2.0/atomic \
@@ -295,8 +297,6 @@ C:/mingw64/include/c++/15.2.0/bits/range_access.h:
 
 _deps/googletest-src/googletest/include/gtest/gtest-assertion-result.h:
 
-C:/mingw64/include/c++/15.2.0/bits/ios_base.h:
-
 _deps/googletest-src/googletest/include/gtest/gtest-printers.h:
 
 _deps/googletest-src/googletest/include/gtest/gtest-death-test.h:
@@ -343,6 +343,8 @@ _deps/googletest-src/googletest/include/gtest/gtest_prod.h:
 
 _deps/googletest-src/googletest/include/gtest/internal/gtest-filepath.h:
 
+C:/DEV/SHealth_15/src/main/cpp/SHealthDomain.h:
+
 C:/mingw64/x86_64-w64-mingw32/include/_timeval.h:
 
 C:/mingw64/include/c++/15.2.0/set:
@@ -382,6 +384,14 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-type-util.h:
 C:/mingw64/include/c++/15.2.0/bits/ostream_insert.h:
 
 C:/DEV/SHealth_15/src/main/cpp/SHealth.h:
+
+C:/mingw64/include/c++/15.2.0/tr1/special_function_util.h:
+
+C:/DEV/SHealth_15/src/main/cpp/SHealthTypes.h:
+
+C:/mingw64/include/c++/15.2.0/bits/exception_ptr.h:
+
+C:/mingw64/include/c++/15.2.0/bits/fstream.tcc:
 
 C:/mingw64/include/c++/15.2.0/bits/atomic_base.h:
 
@@ -441,12 +451,6 @@ C:/mingw64/x86_64-w64-mingw32/include/_mingw_stat64.h:
 
 C:/mingw64/include/c++/15.2.0/bits/exception_defines.h:
 
-C:/mingw64/include/c++/15.2.0/tr1/special_function_util.h:
-
-C:/mingw64/include/c++/15.2.0/bits/exception_ptr.h:
-
-C:/mingw64/include/c++/15.2.0/bits/fstream.tcc:
-
 C:/mingw64/include/c++/15.2.0/bits/fs_fwd.h:
 
 C:/mingw64/include/c++/15.2.0/bits/stl_bvector.h:
@@ -456,6 +460,8 @@ C:/mingw64/include/c++/15.2.0/bits/fs_path.h:
 C:/mingw64/include/c++/15.2.0/bits/hashtable.h:
 
 C:/mingw64/include/c++/15.2.0/bits/invoke.h:
+
+C:/mingw64/include/c++/15.2.0/bits/ios_base.h:
 
 C:/mingw64/include/c++/15.2.0/bits/istream.tcc:
 

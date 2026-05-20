@@ -25,6 +25,8 @@ CMakeFiles/SHealthBMITest.dir/src/test/cpp/SHealthBMITest.cpp.obj
  C:/DEV/SHealth_15/build-gcc/_deps/googletest-src/googletest/include/gtest/internal/gtest-string.h
  C:/DEV/SHealth_15/build-gcc/_deps/googletest-src/googletest/include/gtest/internal/gtest-type-util.h
  C:/DEV/SHealth_15/src/main/cpp/SHealth.h
+ C:/DEV/SHealth_15/src/main/cpp/SHealthDomain.h
+ C:/DEV/SHealth_15/src/main/cpp/SHealthTypes.h
  C:/mingw64/include/c++/15.2.0/any
  C:/mingw64/include/c++/15.2.0/array
  C:/mingw64/include/c++/15.2.0/atomic

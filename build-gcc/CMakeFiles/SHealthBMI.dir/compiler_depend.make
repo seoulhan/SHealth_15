@@ -108,7 +108,10 @@ CMakeFiles/SHealthBMI.dir/src/main/cpp/SHealthBMI.cpp.obj: C:/DEV/SHealth_15/src
   C:/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
   C:/mingw64/x86_64-w64-mingw32/include/vadefs.h \
   C:/mingw64/x86_64-w64-mingw32/include/wchar.h \
-  C:/DEV/SHealth_15/src/main/cpp/SHealth.h
+  C:/DEV/SHealth_15/src/main/cpp/SHealth.h \
+  C:/DEV/SHealth_15/src/main/cpp/SHealthDomain.h \
+  C:/DEV/SHealth_15/src/main/cpp/SHealthPresenter.h \
+  C:/DEV/SHealth_15/src/main/cpp/SHealthTypes.h
 
 
 C:/mingw64/include/c++/15.2.0/concepts:
@@ -326,3 +329,9 @@ C:/mingw64/x86_64-w64-mingw32/include/swprintf.inl:
 C:/mingw64/x86_64-w64-mingw32/include/vadefs.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/wchar.h:
+
+C:/DEV/SHealth_15/src/main/cpp/SHealthDomain.h:
+
+C:/DEV/SHealth_15/src/main/cpp/SHealthPresenter.h:
+
+C:/DEV/SHealth_15/src/main/cpp/SHealthTypes.h:
