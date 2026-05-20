@@ -275,3 +275,84 @@ ctest -R SHealthGoldenMaster -V
 | 버전 | 일자 | 변경 |
 |------|------|------|
 | 1.0 | 2026-05-20 | Step 11 QA 종합 최종 보고서 초안 |
+| 1.1 | 2026-05-20 | 부록 B — Step 18 Activity 4~5 통합 요약 (본문 §1~9 유지) |
+
+---
+
+## 부록 B — Step 18: Activity 4~5 통합 요약 (v1.1)
+
+> **목적:** Step 11 본문(Activities 1~3·5 초안, Activity 4 **미완** 스냅샷)은 **훼손하지 않고**, Step 12~18 기능 스프린트 **실제 달성**과 Activity 5 회고 갱신만 추가한다. 상세는 `docs/feature_final_report.md`.
+
+### B.1 Executive Summary (Step 18 시점)
+
+| 영역 | Step 11 (§1) | Step 18 |
+|------|--------------|---------|
+| Must FR-01~08 | 달성 | **유지** |
+| Should FR-S01~S03 | 부분 (S02·S01 미완) | **S01~S03 달성** |
+| Should FR-S04 | 충족 | **유지** (51 unit) |
+| Could FR-C01~C02 | 미착수 | **달성** |
+| ctest | 40/40 | **52/52** |
+| Activity 4 | ~25% | **~95%** |
+| Open 결함 (기능) | DEF-002, DEF-011 | **DEF-011만** (002는 Step 13 구현·`TC_HGT_*` Green) |
+
+### B.2 §7 로드맵 달성 결과 (Before → After)
+
+| §7.1 순서 | Step 11 상태 | Step 18 결과 | Step |
+|-----------|--------------|--------------|------|
+| 1 height=0 | 미완 | **완료** | 13 |
+| 2 SRP 분리 | 미완 | **완료** (6 모듈) | 16 |
+| 3 정상 ID 목록 | 미완 | **완료** | 15 |
+| 4 전체 4분류 비율 | 미완 | **완료** | 15 |
+| 5 CLI 경로 | 미완 | **미완** | — |
+| 6 vector 전환 | 미착수 | **미착수** | — |
+
+추가: **FR-S03** `getAgeBandRatios` — Step 14.
+
+### B.3 요구 달성도 (FR-S01~S03, FR-C01~C02)
+
+| ID | Step 11 | Step 18 | 검증 |
+|----|---------|---------|------|
+| FR-S01 | 부분 | **완료** | `docs/feature_srp_refactoring.md`; 52/52 Pass |
+| FR-S02 | 미충족 | **완료** | `imputeMissingHeightsByAgeBand`, `TC_HGT_10/11` |
+| FR-S03 | 부분 | **완료** | `getAgeBandRatios`, `TC_API_01~04` |
+| FR-C01 | 미착수 | **완료** | `getNormalBmiUserIds`, `TC_LST_01~03` |
+| FR-C02 | 미착수 | **완료** | `getGlobalBmiRatios`, `TC_GLB_01~03` |
+
+### B.4 테스트·Golden (Step 18)
+
+| 구분 | Step 11 | Step 18 |
+|------|---------|---------|
+| 단위 | 39 | **51** |
+| Golden | 1 | **1** (FR-08 6행 baseline **불변**) |
+| 합계 | 40 | **52** |
+| 신규 스위트 | — | HeightImputation, AgeBandDistributionApi, NormalBmiUsers, GlobalBmiRatios |
+
+Golden: Step 13~16 후 **baseline 갱신 없음** (`docs/feature_regression_report.md` §4). FR-C01/C02 데모 stdout 2행은 Golden **비대상**.
+
+### B.5 Activity 5 회고 갱신 (발표용)
+
+| 질문 | Step 11 (§9) | Step 18 |
+|------|--------------|---------|
+| 목표 달성도? | Activity 4 **약 25%** | Activity 4 **~95%**; 1~3·회귀 **100%** |
+| Before/After? | God Class → 파이프라인·40 tests | + **모듈 6분할·52 tests·신규 API 4개** |
+| AI 활용? | 문서·TC 가속 | + **기능 설계(12)·SRP 매트릭스(16)·회귀 실측(17)** |
+| TC 영향? | P0·Open 고정 후 수정 | **기능 Step마다 TC 선행**; Golden 6행 분리로 SRP 안전 |
+| 클린코드? | SSOT·Golden 삼각형 | + **기능 후 구조 분리**; 문서·DEF 동기화는 잔여 |
+
+### B.6 잔여·다음 스프린트 (Step 18 권장)
+
+- **DEF-011** — CLI/env 데이터 경로 (P3)
+- **defect_list v1.2** — DEF-002 → Fixed, 52/52 반영
+- **10대·80대** — 요구 변경 시 연령 밴드·Golden 8행 확장
+- **vector / DIP** — `MAX_RECORDS` 제거, `istream` 주입 (장기)
+
+상세 로드맵·TC 팁·AI 한계: `docs/feature_final_report.md` §5~§6.
+
+### B.7 관련 산출물
+
+| 문서 | 역할 |
+|------|------|
+| `docs/feature_final_report.md` | Step 18 종합·회고 **본문** |
+| `docs/feature_regression_report.md` | Step 17 회귀·Golden 실측 |
+| `docs/feature_implementation_notes.md` | Step 13~16 구현 노트 |
+| `Report/18_기능_개선_종합_Activity5_회고_report.md` | Step 18 작업 보고 |
