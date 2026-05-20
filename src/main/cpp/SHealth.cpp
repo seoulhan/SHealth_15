@@ -121,6 +121,32 @@ void SHealth::imputeMissingWeightsByAgeBand() {
     }
 }
 
+void SHealth::imputeMissingHeightsByAgeBand() {
+    for (int bandStart = MIN_AGE_BAND; bandStart <= MAX_AGE_BAND; bandStart += AGE_BAND_WIDTH) {
+        double sum = 0.0;
+        int validHeightCount = 0;
+        for (int i = 0; i < recordCount; i++) {
+            if (!isInAgeBand(ages[i], bandStart)) {
+                continue;
+            }
+            if (heights[i] == 0.0) {
+                continue;
+            }
+            sum += heights[i];
+            validHeightCount++;
+        }
+        if (validHeightCount == 0) {
+            continue;
+        }
+        const double averageHeight = sum / validHeightCount;
+        for (int i = 0; i < recordCount; i++) {
+            if (isInAgeBand(ages[i], bandStart) && heights[i] == 0.0) {
+                heights[i] = averageHeight;
+            }
+        }
+    }
+}
+
 void SHealth::computeBmis() {
     for (int i = 0; i < recordCount; i++) {
         const double heightMeters = heights[i] / CM_PER_METER;
@@ -179,6 +205,7 @@ int SHealth::calculateBmi(const std::string& filename) {
         return 0;
     }
     imputeMissingWeightsByAgeBand();
+    imputeMissingHeightsByAgeBand();
     computeBmis();
     aggregateAgeBandStatistics();
     return recordCount;

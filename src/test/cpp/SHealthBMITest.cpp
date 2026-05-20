@@ -367,7 +367,42 @@ TEST_F(SHealthBMITestFixture, TC_EXC_10_CheckinFixtureRelativePath) {
     expectRatioNear(health.getBmiRatio(20, kTypeOverweight), 100.0);
 }
 
-// --- TC-HGT: height=0 (P1, As-Is documentation) ---
+// --- TC-HGT: height=0 (FR-S02 HeightImputation) ---
+
+TEST_F(SHealthBMITestFixture, TC_HGT_10_ThirtyBandAverageHeightImputation) {
+    const std::string path = writeTempCsv(
+        "1,30,50,170\n"
+        "2,31,70,175\n"
+        "3,32,60,0\n");
+    EXPECT_EQ(health.calculateBmi(path), 3);
+    const double imputedHeightCm = (170.0 + 175.0) / 2.0;
+    EXPECT_NEAR(imputedHeightCm, 172.5, 1e-9);
+    const double bmiImputed = expectedBmi(60.0, imputedHeightCm);
+    ASSERT_TRUE(std::isfinite(bmiImputed));
+    EXPECT_GT(bmiImputed, 18.5);
+    EXPECT_LT(bmiImputed, 23.0);
+    expectRatioNear(health.getBmiRatio(30, kTypeUnderweight), 33.33);
+    expectRatioNear(health.getBmiRatio(30, kTypeNormal), 66.67);
+    const double sum = health.getBmiRatio(30, kTypeUnderweight) +
+                       health.getBmiRatio(30, kTypeNormal) +
+                       health.getBmiRatio(30, kTypeOverweight) +
+                       health.getBmiRatio(30, kTypeObesity);
+    expectRatioNear(sum, 100.0);
+}
+
+TEST_F(SHealthBMITestFixture, TC_HGT_11_FortyBandAllZeroHeightsSkipped) {
+    const std::string path = writeTempCsv(
+        "1,45,70,0\n"
+        "2,46,80,0\n");
+    EXPECT_EQ(health.calculateBmi(path), 2);
+    const double sum = health.getBmiRatio(40, kTypeUnderweight) +
+                       health.getBmiRatio(40, kTypeNormal) +
+                       health.getBmiRatio(40, kTypeOverweight) +
+                       health.getBmiRatio(40, kTypeObesity);
+    EXPECT_DOUBLE_EQ(sum, 0.0);
+}
+
+// --- TC-HGT: height=0 edge cases (solo band, no peers to impute) ---
 
 TEST_F(SHealthBMITestFixture, TC_HGT_01_HeightZeroWeightPositive) {
     const std::string path = writeTempCsv("1,25,70,0\n");

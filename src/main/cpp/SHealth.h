@@ -55,6 +55,7 @@ private:
 
     int loadRecordsFromFile(const std::string& filename);
     void imputeMissingWeightsByAgeBand();
+    void imputeMissingHeightsByAgeBand();
     void computeBmis();
     void aggregateAgeBandStatistics();
 

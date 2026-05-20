@@ -1,5 +1,5 @@
 {
-  "tests": 39,
+  "tests": 41,
   "name": "AllTests",
   "testsuites": [
     {
@@ -56,7 +56,7 @@
     },
     {
       "name": "SHealthBMITestFixture",
-      "tests": 31,
+      "tests": 33,
       "testsuite": [
         {
           "name": "TC_BMI_01_StandardFormulaOverweight",
@@ -204,14 +204,24 @@
           "line": 361
         },
         {
-          "name": "TC_HGT_01_HeightZeroWeightPositive",
+          "name": "TC_HGT_10_ThirtyBandAverageHeightImputation",
           "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
           "line": 372
         },
         {
+          "name": "TC_HGT_11_FortyBandAllZeroHeightsSkipped",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 393
+        },
+        {
+          "name": "TC_HGT_01_HeightZeroWeightPositive",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 407
+        },
+        {
           "name": "TC_HGT_02_HeightZeroWeightZero",
           "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
-          "line": 382
+          "line": 417
         }
       ]
     }
