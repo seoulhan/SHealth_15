@@ -72,9 +72,23 @@ int SHealth::loadRecordsFromFile(const std::string& filename) {
         if (tokens.empty()) {
             break;
         }
-        ages[recordCount] = std::stoi(tokens[1]);
-        weights[recordCount] = std::stod(tokens[2]);
-        heights[recordCount] = std::stod(tokens[3]);
+        if (tokens.size() < 4) {
+            std::cerr << "Skipping malformed line (too few columns): " << line << std::endl;
+            continue;
+        }
+        if (recordCount >= MAX_RECORDS) {
+            std::cerr << "Maximum record count exceeded: " << MAX_RECORDS << std::endl;
+            break;
+        }
+        try {
+            ages[recordCount] = std::stoi(tokens[1]);
+            weights[recordCount] = std::stod(tokens[2]);
+            heights[recordCount] = std::stod(tokens[3]);
+        } catch (const std::exception& e) {
+            std::cerr << "Skipping line with invalid numeric field: " << line << " ("
+                      << e.what() << ")" << std::endl;
+            continue;
+        }
         recordCount++;
     }
     file.close();

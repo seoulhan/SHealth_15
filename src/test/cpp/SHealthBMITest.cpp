@@ -316,10 +316,7 @@ TEST_F(SHealthBMITestFixture, TC_EXC_05_MalformedCsvTooFewColumns) {
     out << "1,25,70\n";
     out.close();
     createdFiles_.push_back(path);
-    // As-Is (I-09): out-of-range token access — documents abort until graceful parse (Step 08+).
-    EXPECT_DEATH(
-        { static_cast<void>(health.calculateBmi(path)); },
-        ".*");
+    EXPECT_EQ(health.calculateBmi(path), 0);
 }
 
 TEST_F(SHealthBMITestFixture, TC_EXC_06_MalformedCsvNonNumericAge) {
@@ -329,7 +326,15 @@ TEST_F(SHealthBMITestFixture, TC_EXC_06_MalformedCsvNonNumericAge) {
     out << "1,abc,70,170\n";
     out.close();
     createdFiles_.push_back(path);
-    EXPECT_THROW(health.calculateBmi(path), std::exception);
+    EXPECT_EQ(health.calculateBmi(path), 0);
+}
+
+TEST_F(SHealthBMITestFixture, TC_EXC_11_MalformedCsvSkipsBadRowLoadsValid) {
+    const std::string path = writeTempCsv(
+        "1,abc,70,170\n"
+        "2,25,70,170\n");
+    EXPECT_EQ(health.calculateBmi(path), 1);
+    expectRatioNear(health.getBmiRatio(20, kTypeOverweight), 100.0);
 }
 
 TEST_F(SHealthBMITestFixture, TC_EXC_07_BlankLineStopsLoading) {

@@ -2,10 +2,10 @@
 
 | 항목 | 내용 |
 |------|------|
-| 문서 버전 | 1.0 |
+| 문서 버전 | 1.1 |
 | 작성일 | 2026-05-20 |
-| Step | 08 — 결함 목록 문서화 |
-| commit string (권장) | `08_결함_목록_문서화_defect_list` |
+| Step | 08 — 결함 목록 문서화 · **1.1 갱신 Step 10** |
+| commit string (권장) | `10_결함_관리_보고_Defect_Management` |
 | 입력 | `docs/defect_detection.md`, `docs/requirements_analysis.md`, `docs/test_cases.md` |
 | 구현 | `src/main/cpp/SHealth.cpp`, `src/test/cpp/SHealthBMITest.cpp` |
 
@@ -15,12 +15,12 @@
 
 | 구분 | 건수 | 비고 |
 |------|------|------|
-| **Open** | 5 | 코드·스펙·회귀 갭 |
-| **Fixed** | 1 | README BMI=25 경계 (DEF-007) |
-| **Won't fix** | 3 | 설계 수용·문서화 계약 (DEF-008~010) |
-| **ctest** | 38 unit + 1 Golden | Golden: `SHealthGoldenMaster.TC_GM_01_*` (Step 09) |
+| **Open** | 2 | Activity 4·운영 (DEF-002, DEF-011) |
+| **Fixed** | 5 | DEF-001, 003, 005, 006, 007 (Step 10) |
+| **Won't fix** | 4 | DEF-004, 008~010 (설계·문서 계약) |
+| **ctest** | **39** unit + **1** Golden | Step 10: `TC_EXC_11` 추가; **40/40 Passed** |
 
-**우선 조치:** DEF-001 (CSV 컬럼 부족 → 프로세스 abort, **High**), DEF-002 (FR-S02 height=0, **Medium**).
+**우선 조치:** DEF-002 (FR-S02 height=0, **Activity 4**), DEF-011 (CWD·CLI, **P3 문서**).
 
 ---
 
@@ -69,34 +69,29 @@ README: *「18.5초과 23미만 정상체중, 23이상 25미만 과체중, **25�
 | **결함 ID** | DEF-001 |
 | **이슈 ID** | I-09 |
 | **제목** | 데이터 행 컬럼 수 부족 시 `tokens[3]` 범위 초과로 프로세스 종료 |
-| **상태** | **Open** |
-| **Severity** | **High** |
-| **Priority** | **P0** |
+| **상태** | **Fixed** (Step 10) |
+| **Severity** | — (Closed) |
+| **Priority** | — |
 
-**재현 단계**
+**재현 단계 (과거)**
 
-1. CSV 작성: 헤더 `id,age,weight,height` + 본문 `1,25,70` (height 컬럼 누락).
-2. `SHealth::calculateBmi(path)` 호출.
-3. `loadRecordsFromFile` 내 `std::stod(tokens[3])` 실행.
+1. CSV: 헤더 + `1,25,70` (height 누락).
+2. `calculateBmi(path)` → `tokens[3]` 범위 초과 → **abort**.
 
-**기대 결과**
+**기대 / 실제 (현행)**
 
-- 잘못된 행 스킵 또는 오류 로그 후 `calculateBmi` → **0** 반환 (graceful 실패).
-- FR-01 견고 파싱; 배치 전체는 중단되지 않음.
-
-**실제 결과**
-
-- `tokens` 크기 < 4 → **미정의 동작 / 프로세스 abort** (플랫폼·빌드에 따라 crash).
+| | 내용 |
+|---|------|
+| **기대** | 잘못된 행 스킵·`cerr` 로그; 유효 행 없으면 `calculateBmi` → **0** |
+| **실제 (Step 10)** | `tokens.size() < 4` → 스킵; `TC_EXC_05` → `EXPECT_EQ(..., 0)` Pass |
 
 **추적성**
 
 | 유형 | ID / 이름 |
 |------|-----------|
-| 요구사항 | FR-01, I-09 (`requirements_analysis.md` §7) |
-| 테스트 | `TC-EXC-05` — `SHealthBMITestFixture.TC_EXC_05_MalformedCsvTooFewColumns` (`EXPECT_DEATH`, Pass) |
-| 소스 | `SHealth.cpp` L71–77 (`loadRecordsFromFile`) |
-
-**비고:** 테스트는 As-Is 결함을 **문서화**하며 Green. 수정 후 `EXPECT_DEATH` → 정상 반환 TC로 전환 필요.
+| 요구사항 | FR-01, I-09 |
+| 테스트 | `TC_EXC_05`, `TC_EXC_11` (혼합 행 부분 로드) |
+| 소스 | `SHealth.cpp` `loadRecordsFromFile` |
 
 ---
 
@@ -146,30 +141,18 @@ README: *「18.5초과 23미만 정상체중, 23이상 25미만 과체중, **25�
 | **결함 ID** | DEF-003 |
 | **이슈 ID** | I-09b |
 | **제목** | `stoi`/`stod` 예외가 `calculateBmi`에서 catch되지 않음 |
-| **상태** | **Open** |
-| **Severity** | **Medium** |
-| **Priority** | **P1** |
+| **상태** | **Fixed** (Step 10) |
+| **Severity** | — (Closed) |
+| **Priority** | — |
 
-**재현 단계**
+**재현 / 현행**
 
-1. CSV: `1,abc,70,170` (age 비숫자).
-2. `calculateBmi(path)` 호출.
+| | 내용 |
+|---|------|
+| **과거** | `stoi`/`stod` 예외 → `calculateBmi` 밖으로 전파 |
+| **현행** | `try`/`catch` → 행 스킵·로그; 전부 무효 시 **0** 반환 (`TC_EXC_06` Pass) |
 
-**기대 결과**
-
-- 행 단위 스킵·로그 또는 `calculateBmi` → 0; 호출자에게 예외 전파 없음.
-
-**실제 결과**
-
-- `std::stoi` → **`std::exception` 전파** (`calculateBmi` 미 catch).
-
-**추적성**
-
-| 유형 | ID / 이름 |
-|------|-----------|
-| 요구사항 | FR-01, I-09 |
-| 테스트 | `TC-EXC-06` `TC_EXC_06_MalformedCsvNonNumericAge` (`EXPECT_THROW`, Pass) |
-| 소스 | `SHealth.cpp` L75–77 |
+**추적성:** FR-01, I-09b; `TC_EXC_06`, `TC_EXC_11`; `loadRecordsFromFile`.
 
 ---
 
@@ -180,9 +163,9 @@ README: *「18.5초과 23미만 정상체중, 23이상 25미만 과체중, **25�
 | **결함 ID** | DEF-004 |
 | **이슈 ID** | I-10 |
 | **제목** | non-finite BMI 레코드 존재 시 4분류 비율 합이 100% 미만 |
-| **상태** | **Open** (스펙·설계 합의 필요) |
-| **Severity** | **Low** |
-| **Priority** | **P2** |
+| **상태** | **Won't fix** (Step 10 — 옵션 A 채택) |
+| **Severity** | Low |
+| **Priority** | P2 |
 
 **재현 단계**
 
@@ -192,7 +175,7 @@ README: *「18.5초과 23미만 정상체중, 23이상 25미만 과체중, **25�
 **기대 결과 (이상적·미정의)**
 
 - README는 “비율”만 명시; **합=100%** 미명시.
-- 제품 결정: (A) 분모=`bandMemberCount` 유지·합<100% 허용, 또는 (B) 분모=`finiteCount`, 또는 (C) FR-S02 보정 후 합≈100%.
+- **Step 10 결정 (A):** 분모=`bandMemberCount` 유지, non-finite BMI는 분류 제외·합<100% **허용**. FR-S02 구현 시 (C)로 TC 갱신 검토.
 
 **실제 결과**
 
@@ -216,30 +199,18 @@ README: *「18.5초과 23미만 정상체중, 23이상 25미만 과체중, **25�
 | **결함 ID** | DEF-005 |
 | **이슈 ID** | I-06 |
 | **제목** | 고정 배열 `ages[10000]` 초과 시 버퍼 오버플로우 위험 |
-| **상태** | **Open** |
-| **Severity** | **Medium** |
-| **Priority** | **P2** |
+| **상태** | **Fixed** (Step 10 — 방어적 상한) |
+| **Severity** | — (Closed) |
+| **Priority** | — |
 
-**재현 단계**
+**재현 / 현행**
 
-1. 10,001행 이상 유효 데이터 CSV 준비.
-2. `calculateBmi` 호출.
+| | 내용 |
+|---|------|
+| **과거** | `recordCount >= MAX_RECORDS` 검사 없음 → 오버플로우 위험 |
+| **현행** | `recordCount >= MAX_RECORDS` 시 `cerr` 로그 후 **추가 로드 중단** (`SHealth.h` `MAX_RECORDS=10000`) |
 
-**기대 결과**
-
-- 명시적 오류 반환 또는 `vector` 확장 (NFR-04).
-
-**실제 결과**
-
-- 상한 검사 없음 → **미정의(오버플로우 가능)**.
-
-**추적성**
-
-| 유형 | ID / 이름 |
-|------|-----------|
-| 요구사항 | §5.1 최대 건수, I-06, NFR-07 |
-| 테스트 | **없음** |
-| 소스 | `SHealth.h` 배열 크기; `loadRecordsFromFile` L78 `recordCount++` |
+**추적성:** I-06, NFR-07; `loadRecordsFromFile`; 10k+ 전용 TC는 미추가(부하·범위 외).
 
 ---
 
@@ -390,11 +361,11 @@ README: *「18.5초과 23미만 정상체중, 23이상 25미만 과체중, **25�
 
 | Defect ID | Issue | Req ID | 테스트 (GTest) | 소스 위치 | 상태 | Sev | Pri |
 |-----------|-------|--------|----------------|-----------|------|-----|-----|
-| DEF-001 | I-09 | FR-01 | `TC_EXC_05_MalformedCsvTooFewColumns` | `loadRecordsFromFile` L71–77 | Open | High | P0 |
+| DEF-001 | I-09 | FR-01 | `TC_EXC_05`, `TC_EXC_11` | `loadRecordsFromFile` | **Fixed** | — | — |
 | DEF-002 | I-03 | FR-S02 | `TC_HGT_01`, `TC_HGT_02` | `computeBmis`, (보정 없음) | Open | Med | P1 |
-| DEF-003 | I-09b | FR-01 | `TC_EXC_06_MalformedCsvNonNumericAge` | `loadRecordsFromFile` L75–77 | Open | Med | P1 |
-| DEF-004 | I-10 | FR-05 | `TC_HGT_*`, `TC_BMI_03` | `aggregateAgeBandStatistics` L125–159 | Open | Low | P2 |
-| DEF-005 | I-06 | §5.1 | — | `loadRecordsFromFile` L78 | Open | Med | P2 |
+| DEF-003 | I-09b | FR-01 | `TC_EXC_06`, `TC_EXC_11` | `loadRecordsFromFile` | **Fixed** | — | — |
+| DEF-004 | I-10 | FR-05 | `TC_HGT_*`, `TC_BMI_03` | `aggregateAgeBandStatistics` | Won't fix | Low | P2 |
+| DEF-005 | I-06 | §5.1 | (방어 코드) | `loadRecordsFromFile` | **Fixed** | — | — |
 | DEF-006 | GM-01 | NFR-05 | `TC_GM_01` (`SHealthGoldenTest`) | `SHealthBMI.cpp` | **Fixed** | — | — |
 | DEF-007 | I-01 | FR-04 | `TC_CLS_06`, `TC_BMI_02` | `classifyBmi` L25–35 | **Fixed** | — | — |
 | DEF-008 | I-02 | FR-03 | `TC_IMP_03` | `imputeMissingWeightsByAgeBand` | Won't fix | Low | P3 |
@@ -408,13 +379,13 @@ README: *「18.5초과 23미만 정상체중, 23이상 25미만 과체중, **25�
 
 | Priority | Defect | 조치 | Step |
 |----------|--------|------|------|
-| P0 | DEF-001 | 컬럼 수 검증, 행 스킵, `TC_EXC_05` 갱신 | 08~10 |
-| P1 | DEF-002 | height=0 보정 + `TC_HGT_*` | 08~09 |
-| P1 | DEF-003 | parse try-catch, 부분 로드 정책 | 08 |
-| P2 | DEF-004 | 비율 합 계약 문서·TC 합의 | 08 |
-| P2 | DEF-005 | `MAX_RECORDS` 방어 또는 `vector` | 08+ |
+| P0 | DEF-001 | 컬럼 수 검증, 행 스킵, `TC_EXC_05` 갱신 | **10 (완료)** |
+| P1 | DEF-002 | height=0 보정 + `TC_HGT_*` | **Activity 4** |
+| P1 | DEF-003 | parse try-catch, 부분 로드 | **10 (완료)** |
+| P2 | DEF-004 | 옵션 A Won't fix | **10 (완료)** |
+| P2 | DEF-005 | `MAX_RECORDS` 방어 | **10 (완료)** |
 | P2 | DEF-006 | Golden Master + ctest | **09 (완료)** |
-| P3 | DEF-010, DEF-011 | API·CLI 경로 | 10~11 |
+| P3 | DEF-011 | API·CLI 경로 | 11 |
 
 ---
 
@@ -423,5 +394,6 @@ README: *「18.5초과 23미만 정상체중, 23이상 25미만 과체중, **25�
 | 버전 | 일자 | 변경 |
 |------|------|------|
 | 1.0 | 2026-05-20 | Step 08 — `defect_detection.md` §9 후보 티켓화, README 경계 별도 §3 |
+| 1.1 | 2026-05-20 | Step 10 — DEF-001/003/005 Fixed, DEF-004 Won't fix(A), ctest 40/40 |
 
-**다음 Step:** DEF-001/002 코드 수정, Step 10 결함 관리.
+**다음 Step:** Activity 4 — DEF-002 FR-S02, Golden baseline 재검토, DEF-011 CLI.
