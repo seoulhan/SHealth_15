@@ -86,17 +86,102 @@ CMakeFiles/shealth_lib.dir/src/main/cpp/SHealth.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/shealth_lib.dir/src/main/cpp/SHealth.cpp.s"
 	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\DEV\SHealth_15\src\main\cpp\SHealth.cpp -o CMakeFiles\shealth_lib.dir\src\main\cpp\SHealth.cpp.s
 
+CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthDomain.cpp.obj: CMakeFiles/shealth_lib.dir/flags.make
+CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthDomain.cpp.obj: CMakeFiles/shealth_lib.dir/includes_CXX.rsp
+CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthDomain.cpp.obj: C:/DEV/SHealth_15/src/main/cpp/SHealthDomain.cpp
+CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthDomain.cpp.obj: CMakeFiles/shealth_lib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\DEV\SHealth_15\build-gcc\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthDomain.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthDomain.cpp.obj -MF CMakeFiles\shealth_lib.dir\src\main\cpp\SHealthDomain.cpp.obj.d -o CMakeFiles\shealth_lib.dir\src\main\cpp\SHealthDomain.cpp.obj -c C:\DEV\SHealth_15\src\main\cpp\SHealthDomain.cpp
+
+CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthDomain.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthDomain.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\DEV\SHealth_15\src\main\cpp\SHealthDomain.cpp > CMakeFiles\shealth_lib.dir\src\main\cpp\SHealthDomain.cpp.i
+
+CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthDomain.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthDomain.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\DEV\SHealth_15\src\main\cpp\SHealthDomain.cpp -o CMakeFiles\shealth_lib.dir\src\main\cpp\SHealthDomain.cpp.s
+
+CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthCsvLoader.cpp.obj: CMakeFiles/shealth_lib.dir/flags.make
+CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthCsvLoader.cpp.obj: CMakeFiles/shealth_lib.dir/includes_CXX.rsp
+CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthCsvLoader.cpp.obj: C:/DEV/SHealth_15/src/main/cpp/SHealthCsvLoader.cpp
+CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthCsvLoader.cpp.obj: CMakeFiles/shealth_lib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\DEV\SHealth_15\build-gcc\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthCsvLoader.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthCsvLoader.cpp.obj -MF CMakeFiles\shealth_lib.dir\src\main\cpp\SHealthCsvLoader.cpp.obj.d -o CMakeFiles\shealth_lib.dir\src\main\cpp\SHealthCsvLoader.cpp.obj -c C:\DEV\SHealth_15\src\main\cpp\SHealthCsvLoader.cpp
+
+CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthCsvLoader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthCsvLoader.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\DEV\SHealth_15\src\main\cpp\SHealthCsvLoader.cpp > CMakeFiles\shealth_lib.dir\src\main\cpp\SHealthCsvLoader.cpp.i
+
+CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthCsvLoader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthCsvLoader.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\DEV\SHealth_15\src\main\cpp\SHealthCsvLoader.cpp -o CMakeFiles\shealth_lib.dir\src\main\cpp\SHealthCsvLoader.cpp.s
+
+CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthImputer.cpp.obj: CMakeFiles/shealth_lib.dir/flags.make
+CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthImputer.cpp.obj: CMakeFiles/shealth_lib.dir/includes_CXX.rsp
+CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthImputer.cpp.obj: C:/DEV/SHealth_15/src/main/cpp/SHealthImputer.cpp
+CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthImputer.cpp.obj: CMakeFiles/shealth_lib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\DEV\SHealth_15\build-gcc\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthImputer.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthImputer.cpp.obj -MF CMakeFiles\shealth_lib.dir\src\main\cpp\SHealthImputer.cpp.obj.d -o CMakeFiles\shealth_lib.dir\src\main\cpp\SHealthImputer.cpp.obj -c C:\DEV\SHealth_15\src\main\cpp\SHealthImputer.cpp
+
+CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthImputer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthImputer.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\DEV\SHealth_15\src\main\cpp\SHealthImputer.cpp > CMakeFiles\shealth_lib.dir\src\main\cpp\SHealthImputer.cpp.i
+
+CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthImputer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthImputer.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\DEV\SHealth_15\src\main\cpp\SHealthImputer.cpp -o CMakeFiles\shealth_lib.dir\src\main\cpp\SHealthImputer.cpp.s
+
+CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthStatistics.cpp.obj: CMakeFiles/shealth_lib.dir/flags.make
+CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthStatistics.cpp.obj: CMakeFiles/shealth_lib.dir/includes_CXX.rsp
+CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthStatistics.cpp.obj: C:/DEV/SHealth_15/src/main/cpp/SHealthStatistics.cpp
+CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthStatistics.cpp.obj: CMakeFiles/shealth_lib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\DEV\SHealth_15\build-gcc\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthStatistics.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthStatistics.cpp.obj -MF CMakeFiles\shealth_lib.dir\src\main\cpp\SHealthStatistics.cpp.obj.d -o CMakeFiles\shealth_lib.dir\src\main\cpp\SHealthStatistics.cpp.obj -c C:\DEV\SHealth_15\src\main\cpp\SHealthStatistics.cpp
+
+CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthStatistics.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthStatistics.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\DEV\SHealth_15\src\main\cpp\SHealthStatistics.cpp > CMakeFiles\shealth_lib.dir\src\main\cpp\SHealthStatistics.cpp.i
+
+CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthStatistics.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthStatistics.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\DEV\SHealth_15\src\main\cpp\SHealthStatistics.cpp -o CMakeFiles\shealth_lib.dir\src\main\cpp\SHealthStatistics.cpp.s
+
+CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthPresenter.cpp.obj: CMakeFiles/shealth_lib.dir/flags.make
+CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthPresenter.cpp.obj: CMakeFiles/shealth_lib.dir/includes_CXX.rsp
+CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthPresenter.cpp.obj: C:/DEV/SHealth_15/src/main/cpp/SHealthPresenter.cpp
+CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthPresenter.cpp.obj: CMakeFiles/shealth_lib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\DEV\SHealth_15\build-gcc\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthPresenter.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthPresenter.cpp.obj -MF CMakeFiles\shealth_lib.dir\src\main\cpp\SHealthPresenter.cpp.obj.d -o CMakeFiles\shealth_lib.dir\src\main\cpp\SHealthPresenter.cpp.obj -c C:\DEV\SHealth_15\src\main\cpp\SHealthPresenter.cpp
+
+CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthPresenter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthPresenter.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\DEV\SHealth_15\src\main\cpp\SHealthPresenter.cpp > CMakeFiles\shealth_lib.dir\src\main\cpp\SHealthPresenter.cpp.i
+
+CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthPresenter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthPresenter.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\DEV\SHealth_15\src\main\cpp\SHealthPresenter.cpp -o CMakeFiles\shealth_lib.dir\src\main\cpp\SHealthPresenter.cpp.s
+
 # Object files for target shealth_lib
 shealth_lib_OBJECTS = \
-"CMakeFiles/shealth_lib.dir/src/main/cpp/SHealth.cpp.obj"
+"CMakeFiles/shealth_lib.dir/src/main/cpp/SHealth.cpp.obj" \
+"CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthDomain.cpp.obj" \
+"CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthCsvLoader.cpp.obj" \
+"CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthImputer.cpp.obj" \
+"CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthStatistics.cpp.obj" \
+"CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthPresenter.cpp.obj"
 
 # External object files for target shealth_lib
 shealth_lib_EXTERNAL_OBJECTS =
 
 libshealth_lib.a: CMakeFiles/shealth_lib.dir/src/main/cpp/SHealth.cpp.obj
+libshealth_lib.a: CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthDomain.cpp.obj
+libshealth_lib.a: CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthCsvLoader.cpp.obj
+libshealth_lib.a: CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthImputer.cpp.obj
+libshealth_lib.a: CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthStatistics.cpp.obj
+libshealth_lib.a: CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthPresenter.cpp.obj
 libshealth_lib.a: CMakeFiles/shealth_lib.dir/build.make
 libshealth_lib.a: CMakeFiles/shealth_lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\DEV\SHealth_15\build-gcc\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libshealth_lib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\DEV\SHealth_15\build-gcc\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library libshealth_lib.a"
 	$(CMAKE_COMMAND) -P CMakeFiles\shealth_lib.dir\cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\shealth_lib.dir\link.txt --verbose=$(VERBOSE)
 

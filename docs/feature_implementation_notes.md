@@ -216,3 +216,41 @@ Global - underweight = %f, normal = %f, overweight = %f, obesity = %f
 - FR-08 6행: 포맷·수치 **불변** — `getAgeBandRatios` 경로 유지
 - FR-C01/C02 데모 2행 추가: Golden **비포함** (`feature_requirements_design.md` §7.1)
 - baseline 갱신: **불필요** (의도적 drift 없음)
+
+---
+
+## §16 — FR-S01: SRP 책임 분리 (Step 16)
+
+| 항목 | 내용 |
+|------|------|
+| 요구 ID | FR-S01 |
+| 구현일 | 2026-05-20 |
+
+### 16.1 구조
+
+| 모듈 | 책임 |
+|------|------|
+| `SHealthTypes.h` | `BmiCategory`, `AgeBandRatios` |
+| `SHealthCsvLoader` | CSV 읽기·토큰화·행 스킵 |
+| `SHealthImputer` | weight/height 0 동연령대 보정 |
+| `SHealthDomain` | `classifyBmi`, 연령대 헬퍼, `computeBmis` |
+| `SHealthStatistics` | 연령대·전체 집계 |
+| `SHealthPresenter` | stdout (`printf`) |
+| `SHealth` | Facade — 저장소·오케스트레이션·public 조회 |
+
+`SHealthBMI.cpp`: `main`만 — `calculateBmi` + Presenter 3함수 호출.
+
+### 16.2 API·동작
+
+- **public 시그니처 변경 없음** (breaking note 없음).
+- 파이프라인 순서·집계 정책·Golden 6행 포맷: Step 15와 **동일**.
+- `testClassifyBmi` / `testIsInAgeBand`: `SHealthDomain` 위임.
+
+### 16.3 테스트
+
+| 스위트 | 결과 |
+|--------|------|
+| Architecture (기존 51 TC) | Green |
+| `SHealthGoldenMaster.TC_GM_01` | Green, baseline 불변 |
+
+상세 매트릭스: `docs/feature_srp_refactoring.md`.

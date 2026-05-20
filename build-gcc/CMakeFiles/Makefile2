@@ -162,12 +162,12 @@ _deps/googletest-build/googletest/clean: _deps/googletest-build/googletest/CMake
 CMakeFiles/shealth_lib.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\shealth_lib.dir\build.make CMakeFiles/shealth_lib.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\shealth_lib.dir\build.make CMakeFiles/shealth_lib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV\SHealth_15\build-gcc\CMakeFiles --progress-num=15,16 "Built target shealth_lib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV\SHealth_15\build-gcc\CMakeFiles --progress-num=15,16,17,18,19,20,21 "Built target shealth_lib"
 .PHONY : CMakeFiles/shealth_lib.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/shealth_lib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\DEV\SHealth_15\build-gcc\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\DEV\SHealth_15\build-gcc\CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/shealth_lib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\DEV\SHealth_15\build-gcc\CMakeFiles 0
 .PHONY : CMakeFiles/shealth_lib.dir/rule
@@ -179,7 +179,7 @@ shealth_lib: CMakeFiles/shealth_lib.dir/rule
 # codegen rule for target.
 CMakeFiles/shealth_lib.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\shealth_lib.dir\build.make CMakeFiles/shealth_lib.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV\SHealth_15\build-gcc\CMakeFiles --progress-num=15,16 "Finished codegen for target shealth_lib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV\SHealth_15\build-gcc\CMakeFiles --progress-num=15,16,17,18,19,20,21 "Finished codegen for target shealth_lib"
 .PHONY : CMakeFiles/shealth_lib.dir/codegen
 
 # clean rule for target.
@@ -199,7 +199,7 @@ CMakeFiles/SHealthBMI.dir/all: CMakeFiles/shealth_lib.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/SHealthBMI.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\DEV\SHealth_15\build-gcc\CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\DEV\SHealth_15\build-gcc\CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/SHealthBMI.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\DEV\SHealth_15\build-gcc\CMakeFiles 0
 .PHONY : CMakeFiles/SHealthBMI.dir/rule
@@ -233,7 +233,7 @@ CMakeFiles/SHealthBMITest.dir/all: _deps/googletest-build/googletest/CMakeFiles/
 
 # Build rule for subdir invocation for target.
 CMakeFiles/SHealthBMITest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\DEV\SHealth_15\build-gcc\CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\DEV\SHealth_15\build-gcc\CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/SHealthBMITest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\DEV\SHealth_15\build-gcc\CMakeFiles 0
 .PHONY : CMakeFiles/SHealthBMITest.dir/rule
@@ -267,7 +267,7 @@ CMakeFiles/SHealthGoldenTest.dir/all: _deps/googletest-build/googletest/CMakeFil
 
 # Build rule for subdir invocation for target.
 CMakeFiles/SHealthGoldenTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\DEV\SHealth_15\build-gcc\CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\DEV\SHealth_15\build-gcc\CMakeFiles 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/SHealthGoldenTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\DEV\SHealth_15\build-gcc\CMakeFiles 0
 .PHONY : CMakeFiles/SHealthGoldenTest.dir/rule

@@ -7,6 +7,11 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # Main library
 add_library(shealth_lib
     src/main/cpp/SHealth.cpp
+    src/main/cpp/SHealthDomain.cpp
+    src/main/cpp/SHealthCsvLoader.cpp
+    src/main/cpp/SHealthImputer.cpp
+    src/main/cpp/SHealthStatistics.cpp
+    src/main/cpp/SHealthPresenter.cpp
 )
 target_include_directories(shealth_lib PUBLIC src/main/cpp)
 

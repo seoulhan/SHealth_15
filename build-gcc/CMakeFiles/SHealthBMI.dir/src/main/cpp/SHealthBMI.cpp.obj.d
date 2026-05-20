@@ -104,4 +104,7 @@ CMakeFiles/SHealthBMI.dir/src/main/cpp/SHealthBMI.cpp.obj: \
  C:/mingw64/include/c++/15.2.0/bits/stl_uninitialized.h \
  C:/mingw64/include/c++/15.2.0/bits/stl_vector.h \
  C:/mingw64/include/c++/15.2.0/bits/stl_bvector.h \
- C:/mingw64/include/c++/15.2.0/bits/vector.tcc
+ C:/mingw64/include/c++/15.2.0/bits/vector.tcc \
+ C:\DEV\SHealth_15\src\main\cpp\SHealthDomain.h \
+ C:\DEV\SHealth_15\src\main\cpp\SHealthTypes.h \
+ C:\DEV\SHealth_15\src\main\cpp\SHealthPresenter.h

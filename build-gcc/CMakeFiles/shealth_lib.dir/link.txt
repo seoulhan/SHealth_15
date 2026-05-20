@@ -1,2 +1,2 @@
-C:\mingw64\bin\ar.exe qc libshealth_lib.a CMakeFiles/shealth_lib.dir/src/main/cpp/SHealth.cpp.obj
+C:\mingw64\bin\ar.exe qc libshealth_lib.a CMakeFiles/shealth_lib.dir/src/main/cpp/SHealth.cpp.obj CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthDomain.cpp.obj CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthCsvLoader.cpp.obj CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthImputer.cpp.obj CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthStatistics.cpp.obj CMakeFiles/shealth_lib.dir/src/main/cpp/SHealthPresenter.cpp.obj
 C:\mingw64\bin\ranlib.exe libshealth_lib.a

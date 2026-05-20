@@ -273,4 +273,6 @@ CMakeFiles/SHealthBMITest.dir/src/test/cpp/SHealthBMITest.cpp.obj: \
  C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/basic_file.h \
  C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++io.h \
  C:/mingw64/include/c++/15.2.0/bits/fstream.tcc \
- C:/DEV/SHealth_15/src/main/cpp/SHealth.h
+ C:/DEV/SHealth_15/src/main/cpp/SHealth.h \
+ C:/DEV/SHealth_15/src/main/cpp/SHealthDomain.h \
+ C:/DEV/SHealth_15/src/main/cpp/SHealthTypes.h
