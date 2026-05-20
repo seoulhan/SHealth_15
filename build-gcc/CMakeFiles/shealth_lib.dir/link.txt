@@ -1,0 +1,2 @@
+C:\mingw64\bin\ar.exe qc libshealth_lib.a CMakeFiles/shealth_lib.dir/src/main/cpp/SHealth.cpp.obj
+C:\mingw64\bin\ranlib.exe libshealth_lib.a
