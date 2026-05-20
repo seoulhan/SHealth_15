@@ -1,0 +1,1 @@
+set(  SHealthBMITest_TESTS)

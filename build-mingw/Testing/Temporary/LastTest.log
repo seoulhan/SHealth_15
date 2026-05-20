@@ -1,0 +1,19 @@
+Start testing: May 20 09:01 대한민국 표준시
+----------------------------------------------------------
+Unable to find executable: SHealthBMITest_NOT_BUILT
+1/1 Testing: SHealthBMITest_NOT_BUILT
+1/1 Test: SHealthBMITest_NOT_BUILT
+Command: ""
+Directory: C:/DEV/SHealth_15/build-mingw
+"SHealthBMITest_NOT_BUILT" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"SHealthBMITest_NOT_BUILT" end time: May 20 09:01 대한민국 표준시
+"SHealthBMITest_NOT_BUILT" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: May 20 09:01 대한민국 표준시

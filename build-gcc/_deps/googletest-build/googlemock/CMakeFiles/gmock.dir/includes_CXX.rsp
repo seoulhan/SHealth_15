@@ -1,0 +1,1 @@
+-I"C:/DEV/SHealth_15/build-gcc/_deps/googletest-src/googlemock/include" -I"C:/DEV/SHealth_15/build-gcc/_deps/googletest-src/googlemock" -isystem "C:/DEV/SHealth_15/build-gcc/_deps/googletest-src/googletest/include" -isystem "C:/DEV/SHealth_15/build-gcc/_deps/googletest-src/googletest"

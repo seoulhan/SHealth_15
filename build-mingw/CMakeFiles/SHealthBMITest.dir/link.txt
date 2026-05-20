@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\SHealthBMITest.dir/objects.a
+C:\PROGRA~1\LLVM\bin\llvm-ar.exe qc CMakeFiles\SHealthBMITest.dir/objects.a @CMakeFiles\SHealthBMITest.dir\objects1.rsp
+C:\mingw64\bin\g++.exe -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Wl,--whole-archive CMakeFiles\SHealthBMITest.dir/objects.a -Wl,--no-whole-archive -o SHealthBMITest.exe -Wl,--out-implib,libSHealthBMITest.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\SHealthBMITest.dir\linkLibs.rsp
