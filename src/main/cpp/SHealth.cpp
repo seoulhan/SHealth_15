@@ -12,6 +12,8 @@ constexpr int kLegacyTypeNormal = 200;
 constexpr int kLegacyTypeOverweight = 300;
 constexpr int kLegacyTypeObesity = 400;
 
+const AgeBandRatios kEmptyAgeBandRatios{};
+
 }  // namespace
 
 bool SHealth::isInAgeBand(int age, int bandStart) {
@@ -20,6 +22,11 @@ bool SHealth::isInAgeBand(int age, int bandStart) {
 
 int SHealth::ageBandToIndex(int bandStart) {
     return (bandStart - MIN_AGE_BAND) / AGE_BAND_WIDTH;
+}
+
+bool SHealth::isValidAgeClass(int ageClass) {
+    return ageClass >= MIN_AGE_BAND && ageClass <= MAX_AGE_BAND &&
+           (ageClass - MIN_AGE_BAND) % AGE_BAND_WIDTH == 0;
 }
 
 BmiCategory SHealth::classifyBmi(double bmi) {
@@ -211,12 +218,14 @@ int SHealth::calculateBmi(const std::string& filename) {
     return recordCount;
 }
 
-double SHealth::getBmiRatio(int ageClass, int type) {
-    if (ageClass < MIN_AGE_BAND || ageClass > MAX_AGE_BAND ||
-        (ageClass - MIN_AGE_BAND) % AGE_BAND_WIDTH != 0) {
-        return 0.0;
+const AgeBandRatios& SHealth::getAgeBandRatios(int ageClass) const {
+    if (!isValidAgeClass(ageClass)) {
+        return kEmptyAgeBandRatios;
     }
+    return ageBandRatios[ageBandToIndex(ageClass)];
+}
 
+double SHealth::getBmiRatio(int ageClass, int type) {
     BmiCategory category;
     switch (type) {
         case kLegacyTypeUnderweight:
@@ -235,7 +244,7 @@ double SHealth::getBmiRatio(int ageClass, int type) {
             return 0.0;
     }
 
-    return ratioForCategory(ageBandRatios[ageBandToIndex(ageClass)], category);
+    return ratioForCategory(getAgeBandRatios(ageClass), category);
 }
 
 std::vector<std::string> SHealth::split(const std::string& line, char delimiter) {

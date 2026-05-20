@@ -30,6 +30,7 @@ add_executable(SHealthBMITest src/test/cpp/SHealthBMITest.cpp)
 target_compile_definitions(SHealthBMITest PRIVATE
     SHEALTH_TESTING
     "SHEALTH_TEST_FIXTURE_DIR=\"${CMAKE_SOURCE_DIR}/src/test/fixtures\""
+    "SHEALTH_TEST_DATA_FILE=\"${CMAKE_SOURCE_DIR}/shealth.dat\""
 )
 target_link_libraries(SHealthBMITest PRIVATE shealth_lib GTest::gtest_main)
 

@@ -8,10 +8,9 @@ int main() {
 
     const int ageBands[] = {20, 30, 40, 50, 60, 70};
     for (int ageBand : ageBands) {
+        const AgeBandRatios& ratios = shealth.getAgeBandRatios(ageBand);
         printf("%d - underweight = %f, normal = %f, overweight = %f, obesity = %f\n",
-               ageBand,
-               shealth.getBmiRatio(ageBand, 100), shealth.getBmiRatio(ageBand, 200),
-               shealth.getBmiRatio(ageBand, 300), shealth.getBmiRatio(ageBand, 400));
+               ageBand, ratios.underweight, ratios.normal, ratios.overweight, ratios.obesity);
     }
 
     return 0;

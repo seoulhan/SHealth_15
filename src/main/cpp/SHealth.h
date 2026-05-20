@@ -21,6 +21,7 @@ class SHealth {
 public:
     int calculateBmi(const std::string& filename);
     double getBmiRatio(int ageClass, int type);
+    const AgeBandRatios& getAgeBandRatios(int ageClass) const;
 
     static BmiCategory testClassifyBmi(double bmi);
     static bool testIsInAgeBand(int age, int bandStart);
@@ -49,6 +50,7 @@ private:
     AgeBandRatios ageBandRatios[AGE_BAND_COUNT];
 
     static bool isInAgeBand(int age, int bandStart);
+    static bool isValidAgeClass(int ageClass);
     static int ageBandToIndex(int bandStart);
     static BmiCategory classifyBmi(double bmi);
     static double ratioForCategory(const AgeBandRatios& ratios, BmiCategory category);

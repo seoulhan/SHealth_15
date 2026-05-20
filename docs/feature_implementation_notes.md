@@ -68,3 +68,62 @@ non-finite BMI 집계 정책은 As-Is 유지: `bandMemberCount`에는 포함, 4�
 - id 컬럼 미파싱 (Step 15 FR-C01에서 해결 예정)
 - `height == 0.0`만 보정 대상 (근사 0·음수 키는 미처리)
 - 전역·연령대 밖(age 19, 80+) 레코드는 연령대 집계 API에 미반영 (기존과 동일)
+
+---
+
+## §14 — FR-S03: 연령대 BMI 4분류 비율 명시적 API (Step 14)
+
+| 항목 | 내용 |
+|------|------|
+| 요구 ID | FR-S03 |
+| 구현일 | 2026-05-20 |
+
+### 14.1 API 계약
+
+| API | 시그니처 | 설명 |
+|-----|----------|------|
+| **신규** | `const AgeBandRatios& getAgeBandRatios(int ageClass) const` | 연령대 4분류 비율(% 단위, 0~100)을 **한 번에** 반환 |
+| **유지** | `double getBmiRatio(int ageClass, int type)` | legacy `type` 100~400; 내부는 `getAgeBandRatios` + `ratioForCategory` **위임** (SSOT) |
+
+**`ageClass` 유효값:** 20, 30, 40, 50, 60, 70 (`MIN_AGE_BAND`~`MAX_AGE_BAND`, 10 간격).  
+**잘못된 `ageClass`:** `getAgeBandRatios` → 모든 필드 0.0인 `AgeBandRatios` (정적 빈 객체 참조); `getBmiRatio` → **0.0** (As-Is).
+
+**`calculateBmi` 선행:** 집계 전 호출 시 초기 0.0과 동일.
+
+### 14.2 `BmiCategory` ↔ legacy `type` 매핑
+
+| `BmiCategory` (enum) | 정수값 | legacy `type` (`getBmiRatio`) | `AgeBandRatios` 필드 |
+|----------------------|--------|-------------------------------|----------------------|
+| `Underweight` | 100 | 100 | `underweight` |
+| `Normal` | 200 | 200 | `normal` |
+| `Overweight` | 300 | 300 | `overweight` |
+| `Obesity` | 400 | 400 | `obesity` |
+
+`enum class BmiCategory : int` — `static_cast<int>(cat)`가 legacy `type`과 동일.
+
+### 14.3 비율 의미 (변경 없음)
+
+- **분모:** 해당 연령대 전체 레코드 수 (`bandMemberCount`).
+- **분자:** `isfinite(bmis[i])`인 레코드만 `classifyBmi`로 카운트.
+- **단일 연령대·유한 BMI만:** 4분류 합 **100% ± 0.01** (`TC-API-04`, `TC-CLS-08`).
+
+### 14.4 마이그레이션
+
+| 소비자 | 권장 |
+|--------|------|
+| 신규 코드 | `getAgeBandRatios(ageClass)` — 4회 `getBmiRatio` 호출 대체 |
+| 기존·Golden·main | `getBmiRatio` **그대로 사용 가능** (동일 수치) |
+| `SHealthBMI.cpp` | `getAgeBandRatios`로 4필드 출력; **printf 포맷 문자열 변경 없음** (FR-08) |
+
+### 14.5 테스트
+
+| TC ID | 스위트 | 검증 |
+|-------|--------|------|
+| TC-API-01 | `AgeBandDistributionApi` | 6연령대: `getAgeBandRatios` == 4× `getBmiRatio` |
+| TC-API-02 | `AgeBandDistributionApi` | `shealth.dat` 6×4 스냅샷 (Golden baseline 수치) |
+| TC-API-03 | `AgeBandDistributionApi` | 잘못된 ageClass → zero ratios / `getBmiRatio` 0.0 |
+| TC-API-04 | `AgeBandDistributionApi` | 20대 4명 각 1분류 → 합 ≈ 100% |
+
+### 14.6 Golden Master
+
+FR-S03은 집계 로직 무변경·main `%f` 6자리 포맷 유지 → **baseline 갱신 불필요**. `SHealthBMI`는 신 API로 동일 수치 출력.

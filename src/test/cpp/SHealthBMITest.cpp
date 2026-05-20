@@ -423,3 +423,97 @@ TEST_F(SHealthBMITestFixture, TC_HGT_02_HeightZeroWeightZero) {
                        health.getBmiRatio(20, kTypeObesity);
     EXPECT_DOUBLE_EQ(sum, 0.0);
 }
+
+// --- AgeBandDistributionApi (FR-S03) ---
+
+namespace {
+
+void expectRatiosMatchLegacy(SHealth& health, int ageClass, const AgeBandRatios& ratios) {
+    expectRatioNear(ratios.underweight, health.getBmiRatio(ageClass, kTypeUnderweight));
+    expectRatioNear(ratios.normal, health.getBmiRatio(ageClass, kTypeNormal));
+    expectRatioNear(ratios.overweight, health.getBmiRatio(ageClass, kTypeOverweight));
+    expectRatioNear(ratios.obesity, health.getBmiRatio(ageClass, kTypeObesity));
+}
+
+void expectRatiosAllZero(const AgeBandRatios& ratios) {
+    EXPECT_DOUBLE_EQ(ratios.underweight, 0.0);
+    EXPECT_DOUBLE_EQ(ratios.normal, 0.0);
+    EXPECT_DOUBLE_EQ(ratios.overweight, 0.0);
+    EXPECT_DOUBLE_EQ(ratios.obesity, 0.0);
+}
+
+}  // namespace
+
+TEST_F(SHealthBMITestFixture, TC_API_01_GetAgeBandRatiosMatchesLegacyGetBmiRatio) {
+    const std::string path = writeTempCsv(
+        "1,25,55,170\n"
+        "2,25,80,175\n"
+        "3,25,63.5,175.5\n");
+    ASSERT_GT(health.calculateBmi(path), 0);
+
+    constexpr int ageBands[] = {20, 30, 40, 50, 60, 70};
+    for (int ageClass : ageBands) {
+        const AgeBandRatios& ratios = health.getAgeBandRatios(ageClass);
+        expectRatiosMatchLegacy(health, ageClass, ratios);
+    }
+}
+
+TEST_F(SHealthBMITestFixture, TC_API_02_SixByFourMatrixSnapshotOnRealData) {
+#ifndef SHEALTH_TEST_DATA_FILE
+    GTEST_SKIP() << "SHEALTH_TEST_DATA_FILE not defined";
+#else
+    ASSERT_GT(health.calculateBmi(SHEALTH_TEST_DATA_FILE), 0);
+
+    struct ExpectedRow {
+        int ageClass;
+        double underweight;
+        double normal;
+        double overweight;
+        double obesity;
+    };
+
+    const ExpectedRow expected[] = {
+        {20, 3.511053, 23.797139, 11.833550, 60.858257},
+        {30, 1.863354, 15.527950, 10.062112, 72.546584},
+        {40, 0.521512, 10.039113, 9.126467, 80.312907},
+        {50, 2.181401, 12.629162, 9.988519, 75.200918},
+        {60, 0.862895, 8.533078, 10.642378, 79.961649},
+        {70, 0.529101, 12.345679, 10.758377, 76.366843},
+    };
+
+    for (const ExpectedRow& row : expected) {
+        const AgeBandRatios& ratios = health.getAgeBandRatios(row.ageClass);
+        expectRatioNear(ratios.underweight, row.underweight);
+        expectRatioNear(ratios.normal, row.normal);
+        expectRatioNear(ratios.overweight, row.overweight);
+        expectRatioNear(ratios.obesity, row.obesity);
+        expectRatiosMatchLegacy(health, row.ageClass, ratios);
+    }
+#endif
+}
+
+TEST_F(SHealthBMITestFixture, TC_API_03_InvalidAgeClassReturnsZeroRatios) {
+    const std::string path = writeTempCsv("1,25,70,170\n");
+    ASSERT_GT(health.calculateBmi(path), 0);
+
+    constexpr int invalidAgeClasses[] = {19, 25, 80, 0, 35};
+    for (int ageClass : invalidAgeClasses) {
+        expectRatiosAllZero(health.getAgeBandRatios(ageClass));
+        EXPECT_DOUBLE_EQ(health.getBmiRatio(ageClass, kTypeNormal), 0.0);
+    }
+}
+
+TEST_F(SHealthBMITestFixture, TC_API_04_SingleBandFourCategoriesSumToOneHundred) {
+    const std::string path = writeTempCsv(
+        "1,25,45,150\n"
+        "2,25,70,170\n"
+        "3,25,80,175\n"
+        "4,25,90,170\n");
+    ASSERT_EQ(health.calculateBmi(path), 4);
+
+    const AgeBandRatios& ratios = health.getAgeBandRatios(20);
+    const double sum =
+        ratios.underweight + ratios.normal + ratios.overweight + ratios.obesity;
+    expectRatioNear(sum, 100.0);
+    expectRatiosMatchLegacy(health, 20, ratios);
+}

@@ -1,5 +1,5 @@
 {
-  "tests": 41,
+  "tests": 45,
   "name": "AllTests",
   "testsuites": [
     {
@@ -56,7 +56,7 @@
     },
     {
       "name": "SHealthBMITestFixture",
-      "tests": 33,
+      "tests": 37,
       "testsuite": [
         {
           "name": "TC_BMI_01_StandardFormulaOverweight",
@@ -222,6 +222,26 @@
           "name": "TC_HGT_02_HeightZeroWeightZero",
           "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
           "line": 417
+        },
+        {
+          "name": "TC_API_01_GetAgeBandRatiosMatchesLegacyGetBmiRatio",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 447
+        },
+        {
+          "name": "TC_API_02_SixByFourMatrixSnapshotOnRealData",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 461
+        },
+        {
+          "name": "TC_API_03_InvalidAgeClassReturnsZeroRatios",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 495
+        },
+        {
+          "name": "TC_API_04_SingleBandFourCategoriesSumToOneHundred",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 506
         }
       ]
     }
