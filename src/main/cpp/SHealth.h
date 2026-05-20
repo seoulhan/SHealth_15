@@ -22,6 +22,9 @@ public:
     int calculateBmi(const std::string& filename);
     double getBmiRatio(int ageClass, int type);
 
+    static BmiCategory testClassifyBmi(double bmi);
+    static bool testIsInAgeBand(int age, int bandStart);
+
 private:
     static constexpr int MAX_RECORDS = 10000;
     static constexpr int MIN_AGE_BAND = 20;

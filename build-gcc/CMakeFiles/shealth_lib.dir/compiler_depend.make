@@ -46,6 +46,7 @@ CMakeFiles/shealth_lib.dir/src/main/cpp/SHealth.cpp.obj: C:/DEV/SHealth_15/src/m
   C:/mingw64/include/c++/15.2.0/bits/range_access.h \
   C:/mingw64/include/c++/15.2.0/bits/refwrap.h \
   C:/mingw64/include/c++/15.2.0/bits/requires_hosted.h \
+  C:/mingw64/include/c++/15.2.0/bits/specfun.h \
   C:/mingw64/include/c++/15.2.0/bits/sstream.tcc \
   C:/mingw64/include/c++/15.2.0/bits/std_abs.h \
   C:/mingw64/include/c++/15.2.0/bits/stl_algobase.h \
@@ -70,6 +71,7 @@ CMakeFiles/shealth_lib.dir/src/main/cpp/SHealth.cpp.obj: C:/DEV/SHealth_15/src/m
   C:/mingw64/include/c++/15.2.0/cctype \
   C:/mingw64/include/c++/15.2.0/cerrno \
   C:/mingw64/include/c++/15.2.0/clocale \
+  C:/mingw64/include/c++/15.2.0/cmath \
   C:/mingw64/include/c++/15.2.0/concepts \
   C:/mingw64/include/c++/15.2.0/cstddef \
   C:/mingw64/include/c++/15.2.0/cstdio \
@@ -90,6 +92,7 @@ CMakeFiles/shealth_lib.dir/src/main/cpp/SHealth.cpp.obj: C:/DEV/SHealth_15/src/m
   C:/mingw64/include/c++/15.2.0/iosfwd \
   C:/mingw64/include/c++/15.2.0/iostream \
   C:/mingw64/include/c++/15.2.0/istream \
+  C:/mingw64/include/c++/15.2.0/limits \
   C:/mingw64/include/c++/15.2.0/new \
   C:/mingw64/include/c++/15.2.0/ostream \
   C:/mingw64/include/c++/15.2.0/pstl/pstl_config.h \
@@ -100,6 +103,18 @@ CMakeFiles/shealth_lib.dir/src/main/cpp/SHealth.cpp.obj: C:/DEV/SHealth_15/src/m
   C:/mingw64/include/c++/15.2.0/string \
   C:/mingw64/include/c++/15.2.0/string_view \
   C:/mingw64/include/c++/15.2.0/system_error \
+  C:/mingw64/include/c++/15.2.0/tr1/bessel_function.tcc \
+  C:/mingw64/include/c++/15.2.0/tr1/beta_function.tcc \
+  C:/mingw64/include/c++/15.2.0/tr1/ell_integral.tcc \
+  C:/mingw64/include/c++/15.2.0/tr1/exp_integral.tcc \
+  C:/mingw64/include/c++/15.2.0/tr1/gamma.tcc \
+  C:/mingw64/include/c++/15.2.0/tr1/hypergeometric.tcc \
+  C:/mingw64/include/c++/15.2.0/tr1/legendre_function.tcc \
+  C:/mingw64/include/c++/15.2.0/tr1/modified_bessel_func.tcc \
+  C:/mingw64/include/c++/15.2.0/tr1/poly_hermite.tcc \
+  C:/mingw64/include/c++/15.2.0/tr1/poly_laguerre.tcc \
+  C:/mingw64/include/c++/15.2.0/tr1/riemann_zeta.tcc \
+  C:/mingw64/include/c++/15.2.0/tr1/special_function_util.h \
   C:/mingw64/include/c++/15.2.0/tuple \
   C:/mingw64/include/c++/15.2.0/type_traits \
   C:/mingw64/include/c++/15.2.0/typeinfo \
@@ -139,6 +154,7 @@ CMakeFiles/shealth_lib.dir/src/main/cpp/SHealth.cpp.obj: C:/DEV/SHealth_15/src/m
   C:/mingw64/x86_64-w64-mingw32/include/limits.h \
   C:/mingw64/x86_64-w64-mingw32/include/locale.h \
   C:/mingw64/x86_64-w64-mingw32/include/malloc.h \
+  C:/mingw64/x86_64-w64-mingw32/include/math.h \
   C:/mingw64/x86_64-w64-mingw32/include/process.h \
   C:/mingw64/x86_64-w64-mingw32/include/pthread.h \
   C:/mingw64/x86_64-w64-mingw32/include/pthread_compat.h \
@@ -249,6 +265,8 @@ C:/mingw64/x86_64-w64-mingw32/include/_mingw_stat64.h:
 
 C:/mingw64/include/c++/15.2.0/bits/exception_defines.h:
 
+C:/mingw64/include/c++/15.2.0/tr1/special_function_util.h:
+
 C:/mingw64/include/c++/15.2.0/bits/exception_ptr.h:
 
 C:/mingw64/include/c++/15.2.0/bits/fstream.tcc:
@@ -297,6 +315,8 @@ C:/mingw64/include/c++/15.2.0/bits/stl_algobase.h:
 
 C:/mingw64/include/c++/15.2.0/bits/refwrap.h:
 
+C:/mingw64/include/c++/15.2.0/bits/specfun.h:
+
 C:/mingw64/include/c++/15.2.0/bits/streambuf.tcc:
 
 C:/mingw64/include/c++/15.2.0/bits/stl_vector.h:
@@ -309,11 +329,11 @@ C:/mingw64/include/c++/15.2.0/bits/stl_uninitialized.h:
 
 C:/mingw64/include/c++/15.2.0/bits/stringfwd.h:
 
+C:/mingw64/include/c++/15.2.0/bits/uses_allocator.h:
+
 C:/mingw64/x86_64-w64-mingw32/include/errno.h:
 
 C:/mingw64/include/c++/15.2.0/bits/utility.h:
-
-C:/mingw64/include/c++/15.2.0/bits/uses_allocator.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/sched.h:
 
@@ -328,6 +348,8 @@ C:/mingw64/include/c++/15.2.0/cctype:
 C:/mingw64/include/c++/15.2.0/cerrno:
 
 C:/mingw64/include/c++/15.2.0/clocale:
+
+C:/mingw64/include/c++/15.2.0/cmath:
 
 C:/mingw64/include/c++/15.2.0/concepts:
 
@@ -375,6 +397,8 @@ C:/mingw64/include/c++/15.2.0/iostream:
 
 C:/mingw64/include/c++/15.2.0/istream:
 
+C:/mingw64/include/c++/15.2.0/limits:
+
 C:/mingw64/include/c++/15.2.0/ostream:
 
 C:/mingw64/include/c++/15.2.0/pstl/pstl_config.h:
@@ -390,6 +414,30 @@ C:/mingw64/x86_64-w64-mingw32/include/malloc.h:
 C:/mingw64/include/c++/15.2.0/string_view:
 
 C:/mingw64/include/c++/15.2.0/system_error:
+
+C:/mingw64/include/c++/15.2.0/tr1/bessel_function.tcc:
+
+C:/mingw64/include/c++/15.2.0/tr1/beta_function.tcc:
+
+C:/mingw64/include/c++/15.2.0/tr1/ell_integral.tcc:
+
+C:/mingw64/include/c++/15.2.0/tr1/exp_integral.tcc:
+
+C:/mingw64/include/c++/15.2.0/tr1/gamma.tcc:
+
+C:/mingw64/include/c++/15.2.0/tr1/hypergeometric.tcc:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h:
+
+C:/mingw64/include/c++/15.2.0/tr1/legendre_function.tcc:
+
+C:/mingw64/include/c++/15.2.0/tr1/modified_bessel_func.tcc:
+
+C:/mingw64/include/c++/15.2.0/tr1/poly_hermite.tcc:
+
+C:/mingw64/include/c++/15.2.0/tr1/poly_laguerre.tcc:
+
+C:/mingw64/include/c++/15.2.0/tr1/riemann_zeta.tcc:
 
 C:/mingw64/include/c++/15.2.0/tuple:
 
@@ -431,8 +479,6 @@ C:/mingw64/x86_64-w64-mingw32/include/_mingw.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h:
-
 C:/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h:
@@ -454,6 +500,8 @@ C:/mingw64/x86_64-w64-mingw32/include/crtdefs.h:
 C:/mingw64/x86_64-w64-mingw32/include/ctype.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/limits.h:
+
+C:/mingw64/x86_64-w64-mingw32/include/math.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/process.h:
 

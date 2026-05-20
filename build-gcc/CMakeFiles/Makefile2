@@ -221,8 +221,8 @@ CMakeFiles/SHealthBMI.dir/clean:
 
 # All Build rule for target.
 CMakeFiles/SHealthBMITest.dir/all: CMakeFiles/shealth_lib.dir/all
-CMakeFiles/SHealthBMITest.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 CMakeFiles/SHealthBMITest.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
+CMakeFiles/SHealthBMITest.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SHealthBMITest.dir\build.make CMakeFiles/SHealthBMITest.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SHealthBMITest.dir\build.make CMakeFiles/SHealthBMITest.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\DEV\SHealth_15\build-gcc\CMakeFiles --progress-num=3,4 "Built target SHealthBMITest"

@@ -35,6 +35,14 @@ BmiCategory SHealth::classifyBmi(double bmi) {
     return BmiCategory::Obesity;
 }
 
+BmiCategory SHealth::testClassifyBmi(double bmi) {
+    return classifyBmi(bmi);
+}
+
+bool SHealth::testIsInAgeBand(int age, int bandStart) {
+    return isInAgeBand(age, bandStart);
+}
+
 double SHealth::ratioForCategory(const AgeBandRatios& ratios, BmiCategory category) {
     switch (category) {
         case BmiCategory::Underweight:

@@ -248,4 +248,29 @@ CMakeFiles/SHealthBMITest.dir/src/test/cpp/SHealthBMITest.cpp.obj: \
  C:/DEV/SHealth_15/build-gcc/_deps/googletest-src/googletest/include/gtest/gtest-typed-test.h \
  C:/DEV/SHealth_15/build-gcc/_deps/googletest-src/googletest/include/gtest/gtest_pred_impl.h \
  C:/DEV/SHealth_15/build-gcc/_deps/googletest-src/googletest/include/gtest/gtest_prod.h \
+ C:/mingw64/include/c++/15.2.0/cmath \
+ C:/mingw64/x86_64-w64-mingw32/include/math.h \
+ C:/mingw64/include/c++/15.2.0/bits/specfun.h \
+ C:/mingw64/include/c++/15.2.0/tr1/gamma.tcc \
+ C:/mingw64/include/c++/15.2.0/tr1/special_function_util.h \
+ C:/mingw64/include/c++/15.2.0/tr1/bessel_function.tcc \
+ C:/mingw64/include/c++/15.2.0/tr1/beta_function.tcc \
+ C:/mingw64/include/c++/15.2.0/tr1/ell_integral.tcc \
+ C:/mingw64/include/c++/15.2.0/tr1/exp_integral.tcc \
+ C:/mingw64/include/c++/15.2.0/tr1/hypergeometric.tcc \
+ C:/mingw64/include/c++/15.2.0/tr1/legendre_function.tcc \
+ C:/mingw64/include/c++/15.2.0/tr1/modified_bessel_func.tcc \
+ C:/mingw64/include/c++/15.2.0/tr1/poly_hermite.tcc \
+ C:/mingw64/include/c++/15.2.0/tr1/poly_laguerre.tcc \
+ C:/mingw64/include/c++/15.2.0/tr1/riemann_zeta.tcc \
+ C:/mingw64/include/c++/15.2.0/filesystem \
+ C:/mingw64/include/c++/15.2.0/bits/fs_fwd.h \
+ C:/mingw64/include/c++/15.2.0/bits/fs_path.h \
+ C:/mingw64/include/c++/15.2.0/codecvt \
+ C:/mingw64/include/c++/15.2.0/bits/fs_dir.h \
+ C:/mingw64/include/c++/15.2.0/bits/fs_ops.h \
+ C:/mingw64/include/c++/15.2.0/fstream \
+ C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/basic_file.h \
+ C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++io.h \
+ C:/mingw64/include/c++/15.2.0/bits/fstream.tcc \
  C:/DEV/SHealth_15/src/main/cpp/SHealth.h
