@@ -1,0 +1,5 @@
+if(EXISTS "C:/DEV/SHealth_15/build-gcc/SHealthGoldenTest[1]_tests.cmake")
+  include("C:/DEV/SHealth_15/build-gcc/SHealthGoldenTest[1]_tests.cmake")
+else()
+  add_test(SHealthGoldenTest_NOT_BUILT SHealthGoldenTest_NOT_BUILT)
+endif()
