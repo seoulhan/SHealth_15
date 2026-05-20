@@ -22,6 +22,8 @@ public:
     int calculateBmi(const std::string& filename);
     double getBmiRatio(int ageClass, int type);
     const AgeBandRatios& getAgeBandRatios(int ageClass) const;
+    std::vector<int> getNormalBmiUserIds() const;
+    const AgeBandRatios& getGlobalBmiRatios() const;
 
     static BmiCategory testClassifyBmi(double bmi);
     static bool testIsInAgeBand(int age, int bandStart);
@@ -42,12 +44,16 @@ private:
     static constexpr double BMI_OVERWEIGHT_MAX = 25.0;
 
     int recordCount = 0;
+    int ids[MAX_RECORDS];
     int ages[MAX_RECORDS];
     double heights[MAX_RECORDS];
     double weights[MAX_RECORDS];
     double bmis[MAX_RECORDS];
 
+    bool statisticsReady = false;
     AgeBandRatios ageBandRatios[AGE_BAND_COUNT];
+    AgeBandRatios globalBmiRatios{};
+    std::vector<int> normalBmiUserIds_;
 
     static bool isInAgeBand(int age, int bandStart);
     static bool isValidAgeClass(int ageClass);
@@ -60,6 +66,7 @@ private:
     void imputeMissingHeightsByAgeBand();
     void computeBmis();
     void aggregateAgeBandStatistics();
+    void aggregateGlobalBmiStatistics();
 
     std::vector<std::string> split(const std::string& line, char delimiter);
 };

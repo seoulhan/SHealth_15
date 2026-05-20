@@ -1,5 +1,6 @@
 #include "SHealth.h"
 
+#include <algorithm>
 #include <cmath>
 #include <fstream>
 #include <iostream>
@@ -66,6 +67,9 @@ double SHealth::ratioForCategory(const AgeBandRatios& ratios, BmiCategory catego
 
 int SHealth::loadRecordsFromFile(const std::string& filename) {
     recordCount = 0;
+    statisticsReady = false;
+    normalBmiUserIds_.clear();
+    globalBmiRatios = AgeBandRatios{};
     std::ifstream file(filename);
     if (!file.is_open()) {
         std::cerr << "Failed to open file: " << filename << std::endl;
@@ -87,7 +91,12 @@ int SHealth::loadRecordsFromFile(const std::string& filename) {
             std::cerr << "Maximum record count exceeded: " << MAX_RECORDS << std::endl;
             break;
         }
+        if (tokens[0].empty()) {
+            std::cerr << "Skipping line with empty id: " << line << std::endl;
+            continue;
+        }
         try {
+            ids[recordCount] = std::stoi(tokens[0]);
             ages[recordCount] = std::stoi(tokens[1]);
             weights[recordCount] = std::stod(tokens[2]);
             heights[recordCount] = std::stod(tokens[3]);
@@ -207,6 +216,51 @@ void SHealth::aggregateAgeBandStatistics() {
     }
 }
 
+void SHealth::aggregateGlobalBmiStatistics() {
+    normalBmiUserIds_.clear();
+    globalBmiRatios = AgeBandRatios{};
+
+    if (recordCount == 0) {
+        statisticsReady = true;
+        return;
+    }
+
+    int underweightCount = 0;
+    int normalCount = 0;
+    int overweightCount = 0;
+    int obesityCount = 0;
+
+    for (int i = 0; i < recordCount; i++) {
+        if (!std::isfinite(bmis[i])) {
+            continue;
+        }
+        switch (classifyBmi(bmis[i])) {
+            case BmiCategory::Underweight:
+                underweightCount++;
+                break;
+            case BmiCategory::Normal:
+                normalCount++;
+                normalBmiUserIds_.push_back(ids[i]);
+                break;
+            case BmiCategory::Overweight:
+                overweightCount++;
+                break;
+            case BmiCategory::Obesity:
+                obesityCount++;
+                break;
+        }
+    }
+
+    std::sort(normalBmiUserIds_.begin(), normalBmiUserIds_.end());
+
+    const double scale = PERCENT_SCALE / recordCount;
+    globalBmiRatios.underweight = underweightCount * scale;
+    globalBmiRatios.normal = normalCount * scale;
+    globalBmiRatios.overweight = overweightCount * scale;
+    globalBmiRatios.obesity = obesityCount * scale;
+    statisticsReady = true;
+}
+
 int SHealth::calculateBmi(const std::string& filename) {
     if (loadRecordsFromFile(filename) == 0) {
         return 0;
@@ -215,6 +269,7 @@ int SHealth::calculateBmi(const std::string& filename) {
     imputeMissingHeightsByAgeBand();
     computeBmis();
     aggregateAgeBandStatistics();
+    aggregateGlobalBmiStatistics();
     return recordCount;
 }
 
@@ -245,6 +300,20 @@ double SHealth::getBmiRatio(int ageClass, int type) {
     }
 
     return ratioForCategory(getAgeBandRatios(ageClass), category);
+}
+
+std::vector<int> SHealth::getNormalBmiUserIds() const {
+    if (!statisticsReady) {
+        return {};
+    }
+    return normalBmiUserIds_;
+}
+
+const AgeBandRatios& SHealth::getGlobalBmiRatios() const {
+    if (!statisticsReady) {
+        return kEmptyAgeBandRatios;
+    }
+    return globalBmiRatios;
 }
 
 std::vector<std::string> SHealth::split(const std::string& line, char delimiter) {

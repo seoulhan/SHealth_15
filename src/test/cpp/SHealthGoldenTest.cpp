@@ -182,14 +182,15 @@ TEST(SHealthGoldenMaster, TC_GM_01_SHealthBMI_stdout_matches_baseline) {
     const std::string rawStdout = captureProcessStdout(executable, workingDirectory);
     ASSERT_FALSE(rawStdout.empty()) << "SHealthBMI produced no stdout.";
 
-    const std::vector<std::string> actualLines =
-        splitLines(normalizeNewlines(rawStdout));
+    std::vector<std::string> actualLines = splitLines(normalizeNewlines(rawStdout));
     const std::vector<std::string> expectedLines =
         splitLines(normalizeNewlines(readFile(baselinePath)));
 
-    ASSERT_EQ(actualLines.size(), kExpectedAgeBandLines)
-        << "Expected " << kExpectedAgeBandLines << " age-band lines.";
+    ASSERT_GE(actualLines.size(), kExpectedAgeBandLines)
+        << "Expected at least " << kExpectedAgeBandLines
+        << " age-band lines (FR-08); FR-C01/C02 demo lines may follow.";
     ASSERT_EQ(expectedLines.size(), kExpectedAgeBandLines);
 
+    actualLines.resize(kExpectedAgeBandLines);
     compareGoldenLines(actualLines, expectedLines);
 }

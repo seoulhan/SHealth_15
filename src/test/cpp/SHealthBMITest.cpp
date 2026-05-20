@@ -517,3 +517,83 @@ TEST_F(SHealthBMITestFixture, TC_API_04_SingleBandFourCategoriesSumToOneHundred)
     expectRatioNear(sum, 100.0);
     expectRatiosMatchLegacy(health, 20, ratios);
 }
+
+// --- NormalBmiUsers (FR-C01) ---
+
+TEST_F(SHealthBMITestFixture, TC_LST_01_ThreeUsersOnlyNormalIdListed) {
+    const std::string path = writeTempCsv(
+        "1,25,45,170\n"
+        "2,25,65,170\n"
+        "3,25,90,170\n");
+    ASSERT_EQ(health.calculateBmi(path), 3);
+
+    const std::vector<int> normalIds = health.getNormalBmiUserIds();
+    ASSERT_EQ(normalIds.size(), 1u);
+    EXPECT_EQ(normalIds[0], 2);
+}
+
+TEST_F(SHealthBMITestFixture, TC_LST_02_BoundaryBmi185And23Excluded) {
+    constexpr double kHeightCm = 170.0;
+    constexpr double kWeightUnderAt185 = 53.0;
+    constexpr double kWeightNormal = 65.0;
+    constexpr double kWeightOverAt23 = 67.0;
+
+    const double bmiUnder = expectedBmi(kWeightUnderAt185, kHeightCm);
+    const double bmiNormal = expectedBmi(kWeightNormal, kHeightCm);
+    const double bmiOver = expectedBmi(kWeightOverAt23, kHeightCm);
+    ASSERT_EQ(SHealth::testClassifyBmi(bmiUnder), BmiCategory::Underweight);
+    ASSERT_EQ(SHealth::testClassifyBmi(bmiNormal), BmiCategory::Normal);
+    ASSERT_EQ(SHealth::testClassifyBmi(bmiOver), BmiCategory::Overweight);
+
+    const std::string path = writeTempCsv(
+        "10,25,53,170\n"
+        "20,25,65,170\n"
+        "30,25,67,170\n");
+    ASSERT_EQ(health.calculateBmi(path), 3);
+
+    const std::vector<int> normalIds = health.getNormalBmiUserIds();
+    ASSERT_EQ(normalIds.size(), 1u);
+    EXPECT_EQ(normalIds[0], 20);
+}
+
+TEST_F(SHealthBMITestFixture, TC_LST_03_NoCalculateBmiReturnsEmptyList) {
+    SHealth fresh;
+    EXPECT_TRUE(fresh.getNormalBmiUserIds().empty());
+}
+
+// --- GlobalBmiRatios (FR-C02) ---
+
+TEST_F(SHealthBMITestFixture, TC_GLB_01_FourCategoriesSumToOneHundred) {
+    const std::string path = writeTempCsv(
+        "1,25,45,150\n"
+        "2,25,70,170\n"
+        "3,25,80,175\n"
+        "4,25,90,170\n");
+    ASSERT_EQ(health.calculateBmi(path), 4);
+
+    const AgeBandRatios& global = health.getGlobalBmiRatios();
+    const double sum =
+        global.underweight + global.normal + global.overweight + global.obesity;
+    expectRatioNear(sum, 100.0);
+}
+
+TEST_F(SHealthBMITestFixture, TC_GLB_02_GlobalIndependentOfAgeBandApi) {
+    const std::string path = writeTempCsv("1,19,65,170\n");
+    ASSERT_EQ(health.calculateBmi(path), 1);
+
+    EXPECT_DOUBLE_EQ(health.getBmiRatio(20, kTypeNormal), 0.0);
+    EXPECT_DOUBLE_EQ(health.getBmiRatio(20, kTypeUnderweight), 0.0);
+
+    const AgeBandRatios& global = health.getGlobalBmiRatios();
+    expectRatioNear(global.normal, 100.0);
+    EXPECT_DOUBLE_EQ(global.underweight, 0.0);
+}
+
+TEST_F(SHealthBMITestFixture, TC_GLB_03_NoCalculateBmiReturnsZeroGlobalRatios) {
+    SHealth fresh;
+    const AgeBandRatios& global = fresh.getGlobalBmiRatios();
+    EXPECT_DOUBLE_EQ(global.underweight, 0.0);
+    EXPECT_DOUBLE_EQ(global.normal, 0.0);
+    EXPECT_DOUBLE_EQ(global.overweight, 0.0);
+    EXPECT_DOUBLE_EQ(global.obesity, 0.0);
+}

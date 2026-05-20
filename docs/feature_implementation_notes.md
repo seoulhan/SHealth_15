@@ -127,3 +127,92 @@ non-finite BMI 집계 정책은 As-Is 유지: `bandMemberCount`에는 포함, 4�
 ### 14.6 Golden Master
 
 FR-S03은 집계 로직 무변경·main `%f` 6자리 포맷 유지 → **baseline 갱신 불필요**. `SHealthBMI`는 신 API로 동일 수치 출력.
+
+---
+
+## §15 — FR-C01/C02: 정상 BMI 목록·전체 범주 비율 (Step 15)
+
+| 항목 | 내용 |
+|------|------|
+| 요구 ID | FR-C01, FR-C02 |
+| 구현일 | 2026-05-20 |
+
+### 15.1 API 계약
+
+| API | 시그니처 | 설명 |
+|-----|----------|------|
+| **신규** | `std::vector<int> getNormalBmiUserIds() const` | `18.5 < BMI < 23` (`BmiCategory::Normal`)인 사용자 **id** 목록 (오름차순, 중복 없음) |
+| **신규** | `const AgeBandRatios& getGlobalBmiRatios() const` | **전체 로드 레코드** 기준 4분류 비율(%) — 연령대 API와 **독립** |
+
+**전제 조건:** `calculateBmi`가 성공(`recordCount > 0`)하여 파이프라인(로드→보정→BMI→연령대·전체 집계)이 완료된 뒤에만 유효한 값을 반환한다.
+
+| 호출 시점 | `getNormalBmiUserIds` | `getGlobalBmiRatios` |
+|-----------|----------------------|----------------------|
+| `calculateBmi` **미호출** | 빈 `vector` | 모든 필드 0.0 (`kEmptyAgeBandRatios`) |
+| `calculateBmi` 실패(0건) | 빈 `vector` | 모든 필드 0.0 (`statisticsReady` false) |
+| `calculateBmi` 성공 | 캐시된 정상 id 목록 | `globalBmiRatios` |
+
+내부 플래그 `statisticsReady`는 `aggregateGlobalBmiStatistics()` 완료 시 `true`, `loadRecordsFromFile` 시작 시 `false`.
+
+### 15.2 데이터 모델·파이프라인
+
+| 변경 | 내용 |
+|------|------|
+| `ids[]` | CSV `tokens[0]` → `std::stoi`; 빈 id·비숫자·파싱 예외 시 **행 스킵** (Step 10 CSV 정책·E-C01-03) |
+| `aggregateGlobalBmiStatistics()` | `calculateBmi` 마지막 단계 — `aggregateAgeBandStatistics` **이후** |
+
+`calculateBmi` 순서 (To-Be):
+
+1. `loadRecordsFromFile`
+2. `imputeMissingWeightsByAgeBand`
+3. `imputeMissingHeightsByAgeBand`
+4. `computeBmis`
+5. `aggregateAgeBandStatistics`
+6. `aggregateGlobalBmiStatistics` ← **신규**
+
+### 15.3 집계 규칙
+
+**FR-C01 (정상 목록)**
+
+- 포함: `isfinite(bmis[i])` 이고 `classifyBmi(bmi) == Normal` (`18.5 < BMI < 23`)
+- 제외: BMI=18.5, 23.0 (경계), non-finite BMI, 저체중·과체중·비만
+
+**FR-C02 (전체 비율)**
+
+| 항목 | 규칙 |
+|------|------|
+| 분모 | `recordCount` (로드 성공 건수) |
+| 분자 | `isfinite(bmis[i])` 인 레코드만 `classifyBmi` 카운트 |
+| non-finite | 분자 제외·**분모 포함** (연령대 집계와 동일) |
+| 연령 19·80+ | 연령대 API에는 미반영, **전체 API에는 포함** (`TC-GLB-02`) |
+
+유한 BMI만 있는 fixture에서 4분류 합 **100% ± 0.01** (`TC-GLB-01`).
+
+### 15.4 main 데모 출력 (Golden 비대상)
+
+FR-08 **6연령대 행** 뒤에 추가 (`SHealthBMI.cpp`):
+
+```
+Normal BMI users (count=N): id1, id2, ...
+Global - underweight = %f, normal = %f, overweight = %f, obesity = %f
+```
+
+- `%f` 6자리 — 기존 6행과 동일
+- **`SHealthGoldenTest`는 앞 6행만 비교** → baseline **갱신 불필요** (추가 줄은 Golden 파서 비대상)
+
+### 15.5 테스트
+
+| TC ID | 스위트 | 검증 |
+|-------|--------|------|
+| TC-LST-01 | `NormalBmiUsers` | 저체중·정상·비만 3명 → 정상 id만 |
+| TC-LST-02 | `NormalBmiUsers` | BMI=18.5·23.0 경계 id **제외** |
+| TC-LST-03 | `NormalBmiUsers` | `calculateBmi` 미호출 → 빈 목록 |
+| TC-GLB-01 | `GlobalBmiRatios` | 4분류 합 ≈ 100% |
+| TC-GLB-02 | `GlobalBmiRatios` | age=19: `getBmiRatio(20,*)==0`, global normal>0 |
+| TC-GLB-03 | `GlobalBmiRatios` | `calculateBmi` 미호출 → zero ratios |
+
+### 15.6 Golden Master
+
+- FR-08 6행: 포맷·수치 **불변** — `getAgeBandRatios` 경로 유지
+- FR-C01/C02 데모 2행 추가: Golden **비포함** (`feature_requirements_design.md` §7.1)
+- baseline 갱신: **불필요** (의도적 drift 없음)

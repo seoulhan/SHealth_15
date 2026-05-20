@@ -1,5 +1,5 @@
 {
-  "tests": 45,
+  "tests": 51,
   "name": "AllTests",
   "testsuites": [
     {
@@ -56,7 +56,7 @@
     },
     {
       "name": "SHealthBMITestFixture",
-      "tests": 37,
+      "tests": 43,
       "testsuite": [
         {
           "name": "TC_BMI_01_StandardFormulaOverweight",
@@ -242,6 +242,36 @@
           "name": "TC_API_04_SingleBandFourCategoriesSumToOneHundred",
           "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
           "line": 506
+        },
+        {
+          "name": "TC_LST_01_ThreeUsersOnlyNormalIdListed",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 523
+        },
+        {
+          "name": "TC_LST_02_BoundaryBmi185And23Excluded",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 535
+        },
+        {
+          "name": "TC_LST_03_NoCalculateBmiReturnsEmptyList",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 559
+        },
+        {
+          "name": "TC_GLB_01_FourCategoriesSumToOneHundred",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 566
+        },
+        {
+          "name": "TC_GLB_02_GlobalIndependentOfAgeBandApi",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 580
+        },
+        {
+          "name": "TC_GLB_03_NoCalculateBmiReturnsZeroGlobalRatios",
+          "file": "C:\\DEV\\SHealth_15\\src\\test\\cpp\\SHealthBMITest.cpp",
+          "line": 592
         }
       ]
     }
